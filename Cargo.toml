@@ -1,0 +1,14 @@
+[package]
+name = "portfolio_api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7"
+tokio = { version = "1.0", features = ["full"] }
+mongodb = { version = "2.8.2" }
+dotenv = "0.15.0"
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+juniper = "0.16.0"
+juniper_axum = "0.1.0"
