@@ -1,20 +1,19 @@
 use axum::{
     routing::{get, post}, Extension, Router
 };
-use std::error::Error as StdError;
-use mongodb::{bson::{self}, error::Error, options::ClientOptions, Client, Collection, Database};
+use mongodb::{bson::{self, Document}, error::Error, options::ClientOptions, Client, Collection, Database};
 use dotenv::dotenv;
 use serde_json::Value;
 use tokio::net::TcpListener;
 use std::{
-    env, sync::{Arc, Mutex}
+    env, sync::{Arc, Mutex},
+    error::Error as StdError
 };
 use serde::{Deserialize, Serialize};
 use juniper::{
     graphql_object, graphql_value, EmptyMutation, EmptySubscription, FieldError, RootNode
 };
 use juniper_axum::graphql;
-use mongodb::bson::Document;
 
 #[derive(Clone, Copy, Debug, Default)]
 pub struct Context;
@@ -28,7 +27,6 @@ struct Introduction {
     title: String,
     icon: String,
 }
-
 #[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
 struct Personal {
     email: String,
@@ -41,7 +39,6 @@ struct Personal {
     #[serde(rename = "backgroundUrl")]
     background_url: String,
 }
-
 #[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
 struct Project {
     email: String,
@@ -51,14 +48,12 @@ struct Project {
     #[serde(rename = "backgroundImage")]
     background_image: String,
 }
-
 #[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
 struct SkillsOverview {
     email: String,
     title: String,
     icon: String,
 }
-
 #[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
 struct Skills {
     name: String,
@@ -66,21 +61,18 @@ struct Skills {
     #[serde(rename = "skillType")]
     skill_type: String,
 }
-
 #[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
 struct SocialMedia {
     url: String,
     #[serde(rename = "socialMediaType")]
     social_media_type: String,
 }
-
 #[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
 struct SoftSkills {
     name: String,
     description: String,
     icon: String,
 }
-
 #[derive(Clone, Copy, Debug)]
 pub struct Query;
 
@@ -197,7 +189,6 @@ impl Query {
         }
     }
 }
-
 
 #[tokio::main]
 async fn main() {
