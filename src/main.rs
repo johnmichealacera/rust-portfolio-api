@@ -21,14 +21,57 @@ pub struct Context;
 
 impl juniper::Context for Context {}
 
+type Schema = RootNode<'static, Query, EmptyMutation<Context>, EmptySubscription<Context>>;
+
+#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
+struct Introduction {
+    title: String,
+    icon: String,
+}
+
+#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
+struct Personal {
+    email: String,
+    #[serde(rename = "jobDescription")]
+    job_description: String,
+    #[serde(rename = "lifeStory")]
+    life_story: String,
+    #[serde(rename = "whyDothis")]
+    why_do_this: String,
+    #[serde(rename = "backgroundUrl")]
+    background_url: String,
+}
+
+#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
+struct Project {
+    email: String,
+    title: String,
+    description: String,
+    url: String,
+    #[serde(rename = "backgroundImage")]
+    background_image: String,
+}
+
+#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
+struct SkillsOverview {
+    email: String,
+    title: String,
+    icon: String,
+}
+
+#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
+struct Skills {
+    name: String,
+    mastery: i32,
+    #[serde(rename = "skillType")]
+    skill_type: String,
+}
+
 #[derive(Clone, Copy, Debug)]
 pub struct Query;
 
 #[graphql_object(context = Context)]
 impl Query {
-    fn add(a: i32, b: i32) -> i32 {
-        a + b
-    }
     // Resolver function to fetch introductions
     async fn introductions() -> Result<Vec<Introduction>, FieldError> {
         match get_data_db(String::from("introductions")).await {
@@ -77,9 +120,40 @@ impl Query {
             )),
         }
     }
+    // Resolver function to fetch skills overview
+    async fn skills_overview() -> Result<Vec<SkillsOverview>, FieldError> {
+        match get_data_db(String::from("skillsoverview")).await {
+            Ok(values) => {
+                let skills_overview: Vec<SkillsOverview> = values
+                    .into_iter()
+                    .filter_map(|value| value_to_skillsoverview(value).ok())
+                    .collect();
+                Ok(skills_overview)
+            }
+            Err(err) => Err(FieldError::new(
+                "Failed to fetch skills overview",
+                graphql_value!({ "details": err.to_string() }),
+            )),
+        }
+    }
+    // Resolver function to fetch skills
+    async fn skills() -> Result<Vec<Skills>, FieldError> {
+        match get_data_db(String::from("skills")).await {
+            Ok(values) => {
+                let skills: Vec<Skills> = values
+                    .into_iter()
+                    .filter_map(|value| value_to_skills(value).ok())
+                    .collect();
+                Ok(skills)
+            }
+            Err(err) => Err(FieldError::new(
+                "Failed to fetch skills",
+                graphql_value!({ "details": err.to_string() }),
+            )),
+        }
+    }
 }
 
-type Schema = RootNode<'static, Query, EmptyMutation<Context>, EmptySubscription<Context>>;
 
 #[tokio::main]
 async fn main() {
@@ -102,35 +176,6 @@ async fn main() {
     let axum_listener_address = format!("{}:{}", axum_address, app_port);
     let listener = TcpListener::bind(&axum_listener_address).await.expect("Failed to bind to address");
     axum::serve(listener, app).await.unwrap();
-}
-
-#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
-struct Introduction {
-    title: String,
-    icon: String,
-}
-
-#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
-struct Personal {
-    email: String,
-    #[serde(rename = "jobDescription")]
-    job_description: String,
-    #[serde(rename = "lifeStory")]
-    life_story: String,
-    #[serde(rename = "whyDothis")]
-    why_do_this: String,
-    #[serde(rename = "backgroundUrl")]
-    background_url: String,
-}
-
-#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
-struct Project {
-    email: String,
-    title: String,
-    description: String,
-    url: String,
-    #[serde(rename = "backgroundImage")]
-    background_image: String,
 }
 
 // basic handler that responds with a static string
@@ -159,7 +204,9 @@ async fn connect_to_database() -> Result<Database, mongodb::error::Error> {
 
 async fn find_all(db: &Database, collection_name: &str) -> Result<Vec<Value>, Error> {
     let collection: Collection<Document> = db.collection(collection_name);
-    let mut cursor = collection.find(None, None).await?;
+    // Construct the filter document to match the email field
+    let filter = bson::doc! { "email": "acerajohnmicheal@gmail.com" };
+    let mut cursor = collection.find(filter, None).await?;
     let mut documents = Vec::new();
 
     while let true = cursor.advance().await? {
@@ -175,31 +222,41 @@ async fn find_all(db: &Database, collection_name: &str) -> Result<Vec<Value>, Er
             Err(e) => eprintln!("Error deserializing document: {}", e),
         }
     }
-
     Ok(documents)
 }
 
 fn value_to_personal(value: Value) -> Result<Personal, Box<dyn StdError>> {
-    // Convert the `Value` into an `Introduction`
     match serde_json::from_value(value) {
         Ok(personal) => Ok(personal),
-        Err(e) => Err(e.into()), // Convert serde_json::Error to Error
+        Err(e) => Err(e.into()),
     }
 }
 
 fn value_to_project(value: Value) -> Result<Project, Box<dyn StdError>> {
-    // Convert the `Value` into an `Introduction`
     match serde_json::from_value(value) {
         Ok(project) => Ok(project),
-        Err(e) => Err(e.into()), // Convert serde_json::Error to Error
+        Err(e) => Err(e.into()),
+    }
+}
+
+fn value_to_skillsoverview(value: Value) -> Result<SkillsOverview, Box<dyn StdError>> {
+    match serde_json::from_value(value) {
+        Ok(skills_overview) => Ok(skills_overview),
+        Err(e) => Err(e.into()),
+    }
+}
+
+fn value_to_skills(value: Value) -> Result<Skills, Box<dyn StdError>> {
+    match serde_json::from_value(value) {
+        Ok(skills) => Ok(skills),
+        Err(e) => Err(e.into()),
     }
 }
 
 fn value_to_introduction(value: Value) -> Result<Introduction, Box<dyn StdError>> {
-    // Convert the `Value` into an `Introduction`
     match serde_json::from_value(value) {
         Ok(introduction) => Ok(introduction),
-        Err(e) => Err(e.into()), // Convert serde_json::Error to Error
+        Err(e) => Err(e.into()),
     }
 }
 
@@ -209,23 +266,7 @@ async fn get_data_db(collection_name: String) -> Result<Vec<Value>, Error> {
 
     // Fetch all documents from the "personals" collection
     let values = find_all(&database, collection_name.as_str()).await?;
-
-    // Convert Vec<Value> to Vec<Personal>
-    // let introductions: Vec<Introduction> = values
-    //     .into_iter()
-    //     .filter_map(|value| {
-    //         // Assuming there is a function to convert Value to Personal
-    //         match value_to_personal(value) {
-    //             Ok(introduction) => Some(introduction),
-    //             Err(e) => {
-    //                 eprintln!("Error converting value to introduction: {}", e);
-    //                 None
-    //             }
-    //         }
-    //     })
-    //     .collect();
     Ok(values)
-    // value_to_introductions(values)
 }
 
 
