@@ -67,6 +67,20 @@ struct Skills {
     skill_type: String,
 }
 
+#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
+struct SocialMedia {
+    url: String,
+    #[serde(rename = "socialMediaType")]
+    social_media_type: String,
+}
+
+#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
+struct SoftSkills {
+    name: String,
+    description: String,
+    icon: String,
+}
+
 #[derive(Clone, Copy, Debug)]
 pub struct Query;
 
@@ -148,6 +162,36 @@ impl Query {
             }
             Err(err) => Err(FieldError::new(
                 "Failed to fetch skills",
+                graphql_value!({ "details": err.to_string() }),
+            )),
+        }
+    }
+    async fn social_media() -> Result<Vec<SocialMedia>, FieldError> {
+        match get_data_db(String::from("socialmedias")).await {
+            Ok(values) => {
+                let socialmedias: Vec<SocialMedia> = values
+                    .into_iter()
+                    .filter_map(|value| value_to_socialmedia(value).ok())
+                    .collect();
+                Ok(socialmedias)
+            }
+            Err(err) => Err(FieldError::new(
+                "Failed to fetch social medias",
+                graphql_value!({ "details": err.to_string() }),
+            )),
+        }
+    }
+    async fn soft_skills() -> Result<Vec<SoftSkills>, FieldError> {
+        match get_data_db(String::from("softskills")).await {
+            Ok(values) => {
+                let softskills: Vec<SoftSkills> = values
+                    .into_iter()
+                    .filter_map(|value| value_to_softskill(value).ok())
+                    .collect();
+                Ok(softskills)
+            }
+            Err(err) => Err(FieldError::new(
+                "Failed to fetch soft skills",
                 graphql_value!({ "details": err.to_string() }),
             )),
         }
@@ -249,6 +293,20 @@ fn value_to_skillsoverview(value: Value) -> Result<SkillsOverview, Box<dyn StdEr
 fn value_to_skills(value: Value) -> Result<Skills, Box<dyn StdError>> {
     match serde_json::from_value(value) {
         Ok(skills) => Ok(skills),
+        Err(e) => Err(e.into()),
+    }
+}
+
+fn value_to_socialmedia(value: Value) -> Result<SocialMedia, Box<dyn StdError>> {
+    match serde_json::from_value(value) {
+        Ok(social_media) => Ok(social_media),
+        Err(e) => Err(e.into()),
+    }
+}
+
+fn value_to_softskill(value: Value) -> Result<SoftSkills, Box<dyn StdError>> {
+    match serde_json::from_value(value) {
+        Ok(soft_skills) => Ok(soft_skills),
         Err(e) => Err(e.into()),
     }
 }
