@@ -92,7 +92,7 @@ impl Query {
             Ok(values) => {
                 let introductions: Vec<Introduction> = values
                     .into_iter()
-                    .filter_map(|value| value_to_introduction(value).ok())
+                    .filter_map(|value| value_to_type(value).ok())
                     .collect();
                 Ok(introductions)
             }
@@ -108,7 +108,7 @@ impl Query {
             Ok(values) => {
                 let personals: Vec<Personal> = values
                     .into_iter()
-                    .filter_map(|value| value_to_personal(value).ok())
+                    .filter_map(|value| value_to_type(value).ok())
                     .collect();
                 Ok(personals)
             }
@@ -124,7 +124,7 @@ impl Query {
             Ok(values) => {
                 let projects: Vec<Project> = values
                     .into_iter()
-                    .filter_map(|value| value_to_project(value).ok())
+                    .filter_map(|value| value_to_type(value).ok())
                     .collect();
                 Ok(projects)
             }
@@ -140,7 +140,7 @@ impl Query {
             Ok(values) => {
                 let skills_overview: Vec<SkillsOverview> = values
                     .into_iter()
-                    .filter_map(|value| value_to_skillsoverview(value).ok())
+                    .filter_map(|value| value_to_type(value).ok())
                     .collect();
                 Ok(skills_overview)
             }
@@ -156,7 +156,7 @@ impl Query {
             Ok(values) => {
                 let skills: Vec<Skills> = values
                     .into_iter()
-                    .filter_map(|value| value_to_skills(value).ok())
+                    .filter_map(|value| value_to_type(value).ok())
                     .collect();
                 Ok(skills)
             }
@@ -171,7 +171,7 @@ impl Query {
             Ok(values) => {
                 let socialmedias: Vec<SocialMedia> = values
                     .into_iter()
-                    .filter_map(|value| value_to_socialmedia(value).ok())
+                    .filter_map(|value| value_to_type(value).ok())
                     .collect();
                 Ok(socialmedias)
             }
@@ -186,7 +186,7 @@ impl Query {
             Ok(values) => {
                 let softskills: Vec<SoftSkills> = values
                     .into_iter()
-                    .filter_map(|value| value_to_softskill(value).ok())
+                    .filter_map(|value| value_to_type(value).ok())
                     .collect();
                 Ok(softskills)
             }
@@ -269,51 +269,12 @@ async fn find_all(db: &Database, collection_name: &str) -> Result<Vec<Value>, Er
     Ok(documents)
 }
 
-fn value_to_personal(value: Value) -> Result<Personal, Box<dyn StdError>> {
+fn value_to_type<T>(value: Value) -> Result<T, Box<dyn StdError>>
+where
+    T: serde::de::DeserializeOwned,
+{
     match serde_json::from_value(value) {
-        Ok(personal) => Ok(personal),
-        Err(e) => Err(e.into()),
-    }
-}
-
-fn value_to_project(value: Value) -> Result<Project, Box<dyn StdError>> {
-    match serde_json::from_value(value) {
-        Ok(project) => Ok(project),
-        Err(e) => Err(e.into()),
-    }
-}
-
-fn value_to_skillsoverview(value: Value) -> Result<SkillsOverview, Box<dyn StdError>> {
-    match serde_json::from_value(value) {
-        Ok(skills_overview) => Ok(skills_overview),
-        Err(e) => Err(e.into()),
-    }
-}
-
-fn value_to_skills(value: Value) -> Result<Skills, Box<dyn StdError>> {
-    match serde_json::from_value(value) {
-        Ok(skills) => Ok(skills),
-        Err(e) => Err(e.into()),
-    }
-}
-
-fn value_to_socialmedia(value: Value) -> Result<SocialMedia, Box<dyn StdError>> {
-    match serde_json::from_value(value) {
-        Ok(social_media) => Ok(social_media),
-        Err(e) => Err(e.into()),
-    }
-}
-
-fn value_to_softskill(value: Value) -> Result<SoftSkills, Box<dyn StdError>> {
-    match serde_json::from_value(value) {
-        Ok(soft_skills) => Ok(soft_skills),
-        Err(e) => Err(e.into()),
-    }
-}
-
-fn value_to_introduction(value: Value) -> Result<Introduction, Box<dyn StdError>> {
-    match serde_json::from_value(value) {
-        Ok(introduction) => Ok(introduction),
+        Ok(result) => Ok(result),
         Err(e) => Err(e.into()),
     }
 }
