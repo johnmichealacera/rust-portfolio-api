@@ -1,5 +1,5 @@
 use axum::{
-    routing::{get, post}, Extension, Router
+    http::{self, Method}, routing::{get, post}, Extension, Router
 };
 use mongodb::{bson::{self, Document}, error::Error, options::ClientOptions, Client, Collection, Database};
 use dotenv::dotenv;
@@ -14,6 +14,7 @@ use juniper::{
     graphql_object, graphql_value, EmptyMutation, EmptySubscription, FieldError, RootNode
 };
 use juniper_axum::graphql;
+use tower_http::cors::{Any, CorsLayer};
 
 #[derive(Clone, Copy, Debug, Default)]
 pub struct Context;
@@ -72,6 +73,16 @@ struct SoftSkills {
     name: String,
     description: String,
     icon: String,
+}
+
+#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
+struct User {
+    email: String,
+    #[serde(rename = "fullName")]
+    full_name: String,
+    #[serde(rename = "contactNumber")]
+    contact_number: String,
+    website: String,
 }
 #[derive(Clone, Copy, Debug)]
 pub struct Query;
@@ -188,12 +199,31 @@ impl Query {
             )),
         }
     }
+    async fn users() -> Result<Vec<User>, FieldError> {
+        match get_data_db(String::from("users")).await {
+            Ok(values) => {
+                let user: Vec<User> = values
+                    .into_iter()
+                    .filter_map(|value| value_to_type(value).ok())
+                    .collect();
+                Ok(user)
+            }
+            Err(err) => Err(FieldError::new(
+                "Failed to fetch user",
+                graphql_value!({ "details": err.to_string() }),
+            )),
+        }
+    }
 }
 
 #[tokio::main]
 async fn main() {
     // Load the .env file
     dotenv().ok();
+    let cors = CorsLayer::new()
+        .allow_methods(vec![Method::GET, Method::POST])
+        .allow_origin(Any)
+        .allow_headers(vec![http::header::CONTENT_TYPE]);
     let schema = Schema::new(
         Query,
         EmptyMutation::<Context>::new(),
@@ -205,6 +235,8 @@ async fn main() {
         // .route("/introduction", post(create_introduction))
         // .route("/:collection_name", get(get_handler))
         .route("/graphql", post(graphql::<Arc<Schema>>))
+        .layer(CorsLayer::permissive())
+        .layer(cors)
         .layer(Extension(Arc::new(schema)));
     let axum_address = env::var("AXUM_ADDRESS").expect("AXUM_ADDRESS must be set");
     let app_port = env::var("PORT").expect("PORT must be set");
