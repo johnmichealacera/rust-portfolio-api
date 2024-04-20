@@ -272,7 +272,12 @@ async fn connect_to_database() -> Result<Database, mongodb::error::Error> {
 async fn find_all(db: &Database, collection_name: &str) -> Result<Vec<Value>, Error> {
     let collection: Collection<Document> = db.collection(collection_name);
     // Construct the filter document to match the email field
-    let filter = bson::doc! { "email": "acerajohnmicheal@gmail.com" };
+    let user_email = env::var("USER_EMAIL")
+            .unwrap_or_else(|_| {
+                println!("USER_EMAIL is not set, using default value");
+                "default_value".to_string()
+            });
+    let filter = bson::doc! { "email": user_email };
     let mut cursor = collection.find(filter, None).await?;
     let mut documents = Vec::new();
 
