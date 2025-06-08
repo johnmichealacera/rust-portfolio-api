@@ -84,6 +84,15 @@ struct User {
     contact_number: String,
     website: String,
 }
+
+#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
+struct Manifesto {
+    #[serde(rename = "sectionName")]
+    section_name: String,
+    content: Vec<String>,
+    order: i32,
+}
+
 #[derive(Clone, Copy, Debug)]
 pub struct Query;
 
@@ -210,6 +219,21 @@ impl Query {
             }
             Err(err) => Err(FieldError::new(
                 "Failed to fetch user",
+                graphql_value!({ "details": err.to_string() }),
+            )),
+        }
+    }
+    async fn manifestos() -> Result<Vec<Manifesto>, FieldError> {
+        match get_data_db(String::from("manifestos")).await {
+            Ok(values) => {
+                let manifestos: Vec<Manifesto> = values
+                    .into_iter()
+                    .filter_map(|value| value_to_type(value).ok())
+                    .collect();
+                Ok(manifestos)
+            }
+            Err(err) => Err(FieldError::new(
+                "Failed to fetch manifestos",
                 graphql_value!({ "details": err.to_string() }),
             )),
         }
