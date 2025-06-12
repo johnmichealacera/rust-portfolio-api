@@ -93,6 +93,16 @@ struct Manifesto {
     order: i32,
 }
 
+#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
+struct CurrentWork {
+    title: String,
+    company: String,
+    #[serde(rename = "companyWebsite")]
+    company_website: String,
+    description: Vec<String>,
+    tags: Vec<String>,
+}
+
 #[derive(Clone, Copy, Debug)]
 pub struct Query;
 
@@ -234,6 +244,21 @@ impl Query {
             }
             Err(err) => Err(FieldError::new(
                 "Failed to fetch manifestos",
+                graphql_value!({ "details": err.to_string() }),
+            )),
+        }
+    }
+    async fn current_work() -> Result<Vec<CurrentWork>, FieldError> {
+        match get_data_db(String::from("currentwork")).await {
+            Ok(values) => {
+                let current_work: Vec<CurrentWork> = values
+                    .into_iter()
+                    .filter_map(|value| value_to_type(value).ok())
+                    .collect();
+                Ok(current_work)
+            }
+            Err(err) => Err(FieldError::new(
+                "Failed to fetch current work",
                 graphql_value!({ "details": err.to_string() }),
             )),
         }
