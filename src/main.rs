@@ -103,6 +103,52 @@ struct CurrentWork {
     tags: Vec<String>,
 }
 
+#[derive(Debug, Deserialize, Serialize)]
+struct BlogPost {
+    title: String,
+    slug: String,
+    author: String,
+    date: String, // ISO date as string for now
+    content: Vec<ContentBlock>, // Array of content blocks with type and value
+    tags: Vec<String>,
+    status: String,
+    excerpt: String, // Add this field that exists in your MongoDB
+    #[serde(rename = "createdAt")]
+    created_at: String, // Add this field that exists in your MongoDB
+    #[serde(rename = "updatedAt")]
+    updated_at: String, // Add this field that exists in your MongoDB
+}
+
+#[graphql_object(context = Context)]
+impl BlogPost {
+    fn title(&self) -> &str { &self.title }
+    fn slug(&self) -> &str { &self.slug }
+    fn author(&self) -> &str { &self.author }
+    fn date(&self) -> &str { &self.date }
+    fn tags(&self) -> &Vec<String> { &self.tags }
+    fn status(&self) -> &str { &self.status }
+    fn excerpt(&self) -> &str { &self.excerpt }
+    fn created_at(&self) -> &str { &self.created_at }
+    fn updated_at(&self) -> &str { &self.updated_at }
+    
+    // This gives you just the content values as strings (like your original struct)
+    fn content(&self) -> Vec<String> {
+        self.content.iter().map(|block| block.value.clone()).collect()
+    }
+    
+    // This gives you the full content blocks with type and value
+    fn content_blocks(&self) -> &Vec<ContentBlock> {
+        &self.content
+    }
+}
+
+#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
+struct ContentBlock {
+    #[serde(rename = "type")]
+    block_type: String,
+    value: String,
+}
+
 #[derive(Clone, Copy, Debug)]
 pub struct Query;
 
@@ -263,6 +309,51 @@ impl Query {
             )),
         }
     }
+
+    // TODO: Support pagination later for blog_posts
+    async fn blog_posts() -> Result<Vec<BlogPost>, FieldError> {
+        match get_data_db(String::from("blogposts")).await {
+            Ok(values) => {
+                let blog_posts: Vec<BlogPost> = values
+                    .into_iter()
+                    .filter_map(|value| {
+                        match value_to_type::<BlogPost>(value.clone()) {
+                            Ok(post) => Some(post),
+                            Err(e) => {
+                                // Log the actual MongoDB document structure for debugging
+                                eprintln!("Failed to deserialize blog post: {:?}", e);
+                                eprintln!("Raw document structure: {:?}", value);
+                                None
+                            }
+                        }
+                    })
+                    .collect();
+                Ok(blog_posts)
+            }
+            Err(err) => Err(FieldError::new(
+                "Failed to fetch blog posts",
+                graphql_value!({ "details": err.to_string() }),
+            )),
+        }
+    }
+
+    // TODO: Add filtering by status in the future
+    async fn blog_post(slug: String) -> Result<Option<BlogPost>, FieldError> {
+        // TODO: Ensure date parsing and formatting improvements later (for now just keep as string)
+        match get_data_db_by_slug(String::from("blogposts"), slug).await {
+            Ok(values) => {
+                let blog_post: Option<BlogPost> = values
+                    .into_iter()
+                    .next()
+                    .and_then(|value| value_to_type(value).ok());
+                Ok(blog_post)
+            }
+            Err(err) => Err(FieldError::new(
+                "Failed to fetch blog post",
+                graphql_value!({ "details": err.to_string() }),
+            )),
+        }
+    }
 }
 
 #[tokio::main]
@@ -363,6 +454,37 @@ async fn get_data_db(collection_name: String) -> Result<Vec<Value>, Error> {
     // Fetch all documents from the "personals" collection
     let values = find_all(&database, collection_name.as_str()).await?;
     Ok(values)
+}
+
+async fn get_data_db_by_slug(collection_name: String, slug: String) -> Result<Vec<Value>, Error> {
+    // Connect to the database
+    let database = connect_to_database().await?;
+    let collection: Collection<Document> = database.collection(collection_name.as_str());
+
+    // Construct the filter document to match both email and slug fields
+    let user_email = env::var("USER_EMAIL")
+        .unwrap_or_else(|_| {
+            println!("USER_EMAIL is not set, using default value");
+            "default_value".to_string()
+        });
+    let filter = bson::doc! { "email": user_email, "slug": slug };
+    let mut cursor = collection.find(filter, None).await?;
+    let mut documents = Vec::new();
+
+    while let true = cursor.advance().await? {
+        let doc = cursor.deserialize_current();
+        match doc {
+            Ok(document) => {
+                // Here, document is of type Document
+                // Convert the BSON Document into a serde_json::Value
+                let doc_as_json = bson::Bson::Document(document).into();
+                
+                documents.push(doc_as_json);
+            },
+            Err(e) => eprintln!("Error deserializing document: {}", e),
+        }
+    }
+    Ok(documents)
 }
 
 
