@@ -131,20 +131,49 @@ impl BlogPost {
     fn created_at(&self) -> &str { &self.created_at }
     fn updated_at(&self) -> &str { &self.updated_at }
     
-    // This gives you just the content values as strings (like your original struct)
-    fn content(&self) -> Vec<String> {
-        self.content.iter().map(|block| block.value.clone()).collect()
+    // This gives you the full content blocks with type and value
+    fn content(&self) -> Vec<ContentBlockOutput> {
+        self.content.iter().map(|block| ContentBlockOutput {
+            block_type: block.block_type.clone(),
+            value: match &block.value {
+                ContentValue::String(s) => s.clone(),
+                ContentValue::StringArray(arr) => arr.join(", "),
+            },
+        }).collect()
     }
     
     // This gives you the full content blocks with type and value
-    fn content_blocks(&self) -> &Vec<ContentBlock> {
-        &self.content
+    #[graphql(name = "contentBlocks")]
+    fn content_blocks(&self) -> Vec<ContentBlockOutput> {
+        self.content.iter().map(|block| ContentBlockOutput {
+            block_type: block.block_type.clone(),
+            value: match &block.value {
+                ContentValue::String(s) => s.clone(),
+                ContentValue::StringArray(arr) => arr.join(", "),
+            },
+        }).collect()
     }
 }
 
-#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
+#[derive(Debug, Deserialize, Serialize)]
 struct ContentBlock {
     #[serde(rename = "type")]
+    block_type: String,
+    #[serde(rename = "value")]
+    value: ContentValue,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+#[serde(untagged)]
+enum ContentValue {
+    String(String),
+    StringArray(Vec<String>),
+}
+
+// GraphQL wrapper for ContentBlock that only exposes the string representation
+#[derive(Debug, juniper::GraphQLObject)]
+struct ContentBlockOutput {
+    #[graphql(name = "blockType")]
     block_type: String,
     value: String,
 }
