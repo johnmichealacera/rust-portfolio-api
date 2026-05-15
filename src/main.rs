@@ -40,6 +40,10 @@ struct Personal {
     #[serde(rename = "backgroundUrl")]
     background_url: String,
 }
+fn default_project_sort_order() -> i32 {
+    9999
+}
+
 #[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
 struct Project {
     email: String,
@@ -48,6 +52,8 @@ struct Project {
     url: String,
     #[serde(rename = "backgroundImage")]
     background_image: String,
+    #[serde(rename = "sortOrder", default = "default_project_sort_order")]
+    sort_order: i32,
 }
 #[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
 struct SkillsOverview {
@@ -219,14 +225,19 @@ impl Query {
     async fn projects() -> Result<Vec<Project>, FieldError> {
         match get_data_db(String::from("projects")).await {
             Ok(values) => {
-                let projects: Vec<Project> = values
+                let mut projects: Vec<Project> = values
                     .into_iter()
                     .filter_map(|value| value_to_type(value).ok())
                     .collect();
+                projects.sort_by(|a, b| {
+                    a.sort_order
+                        .cmp(&b.sort_order)
+                        .then_with(|| a.title.cmp(&b.title))
+                });
                 Ok(projects)
             }
             Err(err) => Err(FieldError::new(
-                "Failed to fetch personals",
+                "Failed to fetch projects",
                 graphql_value!({ "details": err.to_string() }),
             )),
         }
