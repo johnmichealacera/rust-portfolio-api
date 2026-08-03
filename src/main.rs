@@ -54,6 +54,14 @@ struct Project {
     background_image: String,
     #[serde(rename = "sortOrder", default = "default_project_sort_order")]
     sort_order: i32,
+    #[serde(default)]
+    role: String,
+    #[serde(default)]
+    constraints: String,
+    #[serde(rename = "keyDecisions", default)]
+    key_decisions: String,
+    #[serde(default)]
+    impact: String,
 }
 #[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
 struct SkillsOverview {
