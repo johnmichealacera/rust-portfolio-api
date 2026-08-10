@@ -62,12 +62,22 @@ struct Project {
     key_decisions: String,
     #[serde(default)]
     impact: String,
+    #[serde(default = "default_project_tier")]
+    tier: String,
+    #[serde(rename = "githubUrl", default)]
+    github_url: String,
+}
+
+fn default_project_tier() -> String {
+    "secondary".to_string()
 }
 #[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
 struct SkillsOverview {
     email: String,
     title: String,
     icon: String,
+    #[serde(rename = "sortOrder", default = "default_project_sort_order")]
+    sort_order: i32,
 }
 #[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
 struct Skills {
