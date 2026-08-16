@@ -1,0 +1,653 @@
+{
+  "slug": "the-boy-who-was-born-into-a-broken-world",
+  "title": "The Boy Who Was Born Into a Broken World",
+  "excerpt": "A father becomes convinced that bringing a child into the world was an act of cruelty — until his son teaches him otherwise, one small thing at a time.",
+  "status": "complete",
+  "sortOrder": 1,
+  "chapters": [
+    {
+      "id": "the-father",
+      "number": "I",
+      "title": "The Father",
+      "status": "published",
+      "scenes": [
+        {
+          "id": "the-father-1",
+          "mood": "quiet-house",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part1/the_father.mp4",
+          "image": null,
+          "imageAlt": "A dim living room at night, toys scattered across the floor beside an open notebook.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "The house is finally quiet.",
+              "speaker": null
+            },
+            {
+              "blockType": "text",
+              "value": "Toys are scattered across the floor. A school notebook lies open — one page holds his son’s crooked handwriting.",
+              "speaker": null
+            }
+          ]
+        },
+        {
+          "id": "the-father-2",
+          "mood": "quiet-house-dim",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part1/the_father_2.mp4",
+          "image": null,
+          "imageAlt": "The father sitting alone in near-darkness, lit only by a single lamp.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "He thinks about his job. Money. Responsibilities. Marriage.",
+              "speaker": null
+            },
+            {
+              "blockType": "text",
+              "value": "His own parents. His children’s future. The cruelty of the world. His inability to protect them from all of it.",
+              "speaker": null
+            }
+          ]
+        },
+        {
+          "id": "the-father-3",
+          "mood": "quiet-house-dim",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part1/the_father_3.mp4",
+          "image": null,
+          "imageAlt": "A close view of a sleeping child, seen from the doorway.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "He looks at his sleeping son.",
+              "speaker": null
+            },
+            {
+              "blockType": "dialogue",
+              "value": "I’m sorry I brought you here.",
+              "speaker": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-world",
+      "number": "II",
+      "title": "The World",
+      "status": "published",
+      "scenes": [
+        {
+          "id": "the-world-1",
+          "mood": "night-walk",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part2/the_world_1.mp4",
+          "image": null,
+          "imageAlt": "A father walking alone through an empty, sleeping town at night.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "He leaves the house and walks through the sleeping town.",
+              "speaker": null
+            },
+            {
+              "blockType": "text",
+              "value": "He begins seeing the world differently.",
+              "speaker": null
+            }
+          ]
+        },
+        {
+          "id": "the-world-2",
+          "mood": "night-walk",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part2/the_world_2.mp4",
+          "image": null,
+          "imageAlt": "A street vendor preparing food at midnight beside a quiet, empty road.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "A street vendor preparing food at midnight. A man returning home from a long shift. An old woman sitting alone outside her house.",
+              "speaker": null
+            }
+          ]
+        },
+        {
+          "id": "the-world-3",
+          "mood": "night-walk",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part2/the_world_3.mp4",
+          "image": null,
+          "imageAlt": "A young couple arguing under a flickering streetlamp.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "A young couple arguing under a flickering light. A drunk man asleep beside the road. Somewhere, a child laughing in the distance.",
+              "speaker": null
+            }
+          ]
+        },
+        {
+          "id": "the-world-4",
+          "mood": "night-walk",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part2/the_world_4.mp4",
+          "image": null,
+          "imageAlt": "A funeral procession passing beneath a glowing luxury billboard, a walled house behind it.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "A funeral procession beneath a billboard advertising luxury. A beggar asking for money outside a wealthy house behind a high wall. A homeless man sleeping beneath a bridge.",
+              "speaker": null
+            },
+            {
+              "blockType": "dialogue",
+              "value": "This is the world I gave him.",
+              "speaker": null
+            }
+          ]
+        },
+        {
+          "id": "the-world-5",
+          "mood": "night-walk",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part2/the_world_5.mp4",
+          "image": null,
+          "imageAlt": "The father standing still at a crossroads, the empty town stretching in every direction.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "Everyone struggles to survive. Everyone wants money. Everyone wants recognition. Everyone wants to be loved. Everyone eventually becomes dust.",
+              "speaker": null
+            },
+            {
+              "blockType": "text",
+              "value": "And yet everyone wakes up tomorrow and does it again.",
+              "speaker": null
+            },
+            {
+              "blockType": "dialogue",
+              "value": "What a strange species we are.",
+              "speaker": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-question",
+      "number": "III",
+      "title": "The Question",
+      "status": "published",
+      "scenes": [
+        {
+          "id": "the-question-1",
+          "mood": "hillside-sunrise",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part3/the_question_1.mp4",
+          "image": null,
+          "imageAlt": "A lone figure on a hill overlooking a town, the first light of dawn on the horizon.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "He reaches a hill overlooking the town. The sun begins rising.",
+              "speaker": null
+            },
+            {
+              "blockType": "dialogue",
+              "value": "If everything ends in death, what is the point?",
+              "speaker": null
+            }
+          ]
+        },
+        {
+          "id": "the-question-2",
+          "mood": "hillside-sunrise",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part3/the_question_2.mp4",
+          "image": null,
+          "imageAlt": "The same figure now simply sitting, watching the sunrise without moving.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "For the first time, he doesn’t try to answer.",
+              "speaker": null
+            },
+            {
+              "blockType": "text",
+              "value": "He simply sits. And watches the sunrise.",
+              "speaker": null
+            }
+          ]
+        },
+        {
+          "id": "the-question-3",
+          "mood": "hillside-sunrise",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part3/the_question_3.mp4",
+          "image": null,
+          "imageAlt": "A small bird landing near the seated figure as the town below slowly wakes.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "A bird lands nearby. A child somewhere below laughs. Someone opens their shop. A woman hangs clothes outside.",
+              "speaker": null
+            },
+            {
+              "blockType": "text",
+              "value": "The world continues. Despite everything.",
+              "speaker": null
+            }
+          ]
+        },
+        {
+          "id": "the-question-4",
+          "mood": "hillside-sunrise",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part3/the_question_4.mp4",
+          "image": null,
+          "imageAlt": "A small boy crouched over something tiny on the ground, calling out to his father.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "Then he remembers something his son said a few days earlier. The boy had found a tiny insect. He was fascinated by it. He ran to his father, shouting —",
+              "speaker": null
+            },
+            {
+              "blockType": "dialogue",
+              "value": "Dad! Look!",
+              "speaker": "His son"
+            }
+          ]
+        },
+        {
+          "id": "the-question-5",
+          "mood": "hillside-sunrise",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part3/the_question_5.mp4",
+          "image": null,
+          "imageAlt": "The father, still seated on the hill, closing his eyes as the memory settles.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "The father had barely looked. He was busy.",
+              "speaker": null
+            },
+            {
+              "blockType": "text",
+              "value": "Now he remembers the boy’s face. Something inside him shifts.",
+              "speaker": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-realization",
+      "number": "IV",
+      "title": "The Realization",
+      "status": "published",
+      "scenes": [
+        {
+          "id": "the-realization-1",
+          "mood": "hillside-sunrise-open",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part4/the_realization_1.mp4",
+          "image": null,
+          "imageAlt": "Open sky above the hill, the light now brighter and less confined than before.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "He realizes he may have been asking the wrong question.",
+              "speaker": null
+            },
+            {
+              "blockType": "text",
+              "value": "He had been asking: “Is life worth living if it eventually ends?” But his son had never asked that.",
+              "speaker": null
+            }
+          ]
+        },
+        {
+          "id": "the-realization-2",
+          "mood": "hillside-sunrise-open",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part4/the_realization_2.mp4",
+          "image": null,
+          "imageAlt": "A faint, warm afterimage of the boy and the insect, overlaid on the open sky.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "The boy didn’t need life to be eternal. He didn’t need a guarantee that suffering would never happen. He simply wanted —",
+              "speaker": null
+            },
+            {
+              "blockType": "dialogue",
+              "value": "Dad, look.",
+              "speaker": "His son"
+            }
+          ]
+        },
+        {
+          "id": "the-realization-3",
+          "mood": "hillside-sunrise-open",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part4/the_realization_3.mp4",
+          "image": null,
+          "imageAlt": "Wide, open dawn sky, nearly abstract, the town small in the distance below.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "A song doesn’t become meaningless because it ends.",
+              "speaker": null
+            },
+            {
+              "blockType": "text",
+              "value": "A sunset doesn’t become worthless because it lasts only minutes.",
+              "speaker": null
+            },
+            {
+              "blockType": "text",
+              "value": "A childhood doesn’t become meaningless because it eventually disappears.",
+              "speaker": null
+            }
+          ]
+        },
+        {
+          "id": "the-realization-4",
+          "mood": "hillside-sunrise-open",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part4/the_realization_4.mp4",
+          "image": null,
+          "imageAlt": "The father standing now, fully lit by the risen sun.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "A life doesn’t need to be infinite to be meaningful.",
+              "speaker": null
+            },
+            {
+              "blockType": "text",
+              "value": "Perhaps meaning isn’t something that defeats death. Perhaps meaning is something we create while death is waiting.",
+              "speaker": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-father-returns",
+      "number": "V",
+      "title": "The Father Returns",
+      "status": "published",
+      "scenes": [
+        {
+          "id": "the-father-returns-1",
+          "mood": "return-home",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part5/the_father_returns_1.mp4",
+          "image": null,
+          "imageAlt": "The father walking back toward his house in the early morning light.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "The father walks home.",
+              "speaker": null
+            },
+            {
+              "blockType": "text",
+              "value": "His son is awake. Still grumpy. Still imperfect. Still difficult.",
+              "speaker": null
+            }
+          ]
+        },
+        {
+          "id": "the-father-returns-2",
+          "mood": "return-home",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part5/the_father_returns_2.mp4",
+          "image": null,
+          "imageAlt": "The boy standing in the doorway, looking at his father with a suspicious frown.",
+          "blocks": [
+            {
+              "blockType": "dialogue",
+              "value": "Where were you?",
+              "speaker": "His son"
+            },
+            {
+              "blockType": "text",
+              "value": "The father smiles.",
+              "speaker": null
+            },
+            {
+              "blockType": "dialogue",
+              "value": "I was thinking.",
+              "speaker": "The father"
+            },
+            {
+              "blockType": "dialogue",
+              "value": "About what?",
+              "speaker": "His son"
+            }
+          ]
+        },
+        {
+          "id": "the-father-returns-3",
+          "mood": "return-home",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part5/the_father_returns_3.mp4",
+          "image": null,
+          "imageAlt": "The father kneeling down to meet his son at eye level.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "He almost says it — about why he brought his son into this terrible world. Instead, he kneels.",
+              "speaker": null
+            },
+            {
+              "blockType": "dialogue",
+              "value": "About how lucky I am that you’re here.",
+              "speaker": "The father"
+            }
+          ]
+        },
+        {
+          "id": "the-father-returns-4",
+          "mood": "return-home",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part5/the_father_returns_4.mp4",
+          "image": null,
+          "imageAlt": "The boy tilting his head, confused, as his father laughs quietly.",
+          "blocks": [
+            {
+              "blockType": "dialogue",
+              "value": "Why?",
+              "speaker": "His son"
+            },
+            {
+              "blockType": "dialogue",
+              "value": "I don’t know yet.",
+              "speaker": "The father"
+            }
+          ]
+        },
+        {
+          "id": "the-father-returns-5",
+          "mood": "return-home",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part5/the_father_returns_5.mp4",
+          "image": null,
+          "imageAlt": "The boy pulling his father by the hand toward something small and unseen just out of frame.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "Then the boy grabs his hand.",
+              "speaker": null
+            },
+            {
+              "blockType": "dialogue",
+              "value": "Come look at this.",
+              "speaker": "His son"
+            },
+            {
+              "blockType": "text",
+              "value": "And pulls him toward something completely insignificant. Perhaps a bug. Perhaps a toy. Perhaps a drawing. Perhaps the sunrise.",
+              "speaker": null
+            },
+            {
+              "blockType": "text",
+              "value": "And this time... the father looks.",
+              "speaker": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "final-scene",
+      "number": null,
+      "title": "Final Scene",
+      "status": "published",
+      "scenes": [
+        {
+          "id": "final-scene-1",
+          "mood": "quiet-horizon",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part6/final_scene_1.mp4",
+          "image": null,
+          "imageAlt": "An old man and his grown son sitting together in quiet, facing a wide horizon.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "Years later.",
+              "speaker": null
+            },
+            {
+              "blockType": "text",
+              "value": "The boy is grown. The father is old. They’re sitting together somewhere quiet.",
+              "speaker": null
+            }
+          ]
+        },
+        {
+          "id": "final-scene-2",
+          "mood": "quiet-horizon",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part6/final_scene_2.mp4",
+          "image": null,
+          "imageAlt": "The grown son turning to ask his father a question, the horizon behind them.",
+          "blocks": [
+            {
+              "blockType": "dialogue",
+              "value": "Dad, were you ever afraid of bringing us into this world?",
+              "speaker": "The son"
+            },
+            {
+              "blockType": "dialogue",
+              "value": "More than you know.",
+              "speaker": "The father"
+            }
+          ]
+        },
+        {
+          "id": "final-scene-3",
+          "mood": "quiet-horizon",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/final_scene_3_utsv9t.mp4",
+          "image": null,
+          "imageAlt": "The old father looking toward the horizon as he answers.",
+          "blocks": [
+            {
+              "blockType": "dialogue",
+              "value": "Why?",
+              "speaker": "The son"
+            },
+            {
+              "blockType": "text",
+              "value": "He looks toward the horizon.",
+              "speaker": null
+            },
+            {
+              "blockType": "dialogue",
+              "value": "Because I thought my job was to protect you from the darkness of the world.",
+              "speaker": "The father"
+            }
+          ]
+        },
+        {
+          "id": "final-scene-4",
+          "mood": "quiet-horizon",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part6/final_scene_4.mp4",
+          "image": null,
+          "imageAlt": "A quiet pause between father and son, neither speaking.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "A pause.",
+              "speaker": null
+            },
+            {
+              "blockType": "dialogue",
+              "value": "Then I realized that wasn’t possible.",
+              "speaker": "The father"
+            },
+            {
+              "blockType": "dialogue",
+              "value": "So what did you do?",
+              "speaker": "The son"
+            }
+          ]
+        },
+        {
+          "id": "final-scene-5",
+          "mood": "quiet-horizon",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part6/final_scene_5.mp4",
+          "image": null,
+          "imageAlt": "The son taking his old father’s hand.",
+          "blocks": [
+            {
+              "blockType": "dialogue",
+              "value": "I tried to make sure that whatever darkness reached you... you didn’t have to face it alone.",
+              "speaker": "The father"
+            },
+            {
+              "blockType": "text",
+              "value": "The son takes his father’s hand.",
+              "speaker": null
+            }
+          ]
+        },
+        {
+          "id": "final-scene-6",
+          "mood": "quiet-horizon",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part6/final_scene_6.mp4",
+          "image": null,
+          "imageAlt": "The two of them, small against the wide, quiet horizon.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "He never needed to solve life.",
+              "speaker": null
+            },
+            {
+              "blockType": "text",
+              "value": "He never needed to understand why humanity exists.",
+              "speaker": null
+            },
+            {
+              "blockType": "text",
+              "value": "He never needed to create a perfect world for his children.",
+              "speaker": null
+            },
+            {
+              "blockType": "text",
+              "value": "He only needed to love them while they were here. And perhaps that was enough.",
+              "speaker": null
+            }
+          ]
+        },
+        {
+          "id": "final-scene-7",
+          "mood": "quiet-house",
+          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part6/final_scene_7.mp4",
+          "image": null,
+          "imageAlt": "A tiny insect crossing the railing beside the old man and his son, echoing the story’s opening.",
+          "blocks": [
+            {
+              "blockType": "text",
+              "value": "Then something small catches the son’s eye — an insect, crossing the railing beside them.",
+              "speaker": null
+            },
+            {
+              "blockType": "dialogue",
+              "value": "Dad. Look.",
+              "speaker": "The son"
+            },
+            {
+              "blockType": "text",
+              "value": "And the old father looks.",
+              "speaker": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

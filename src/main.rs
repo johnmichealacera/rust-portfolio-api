@@ -202,6 +202,61 @@ struct ContentBlockOutput {
     value: String,
 }
 
+#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
+struct StoryBlock {
+    #[serde(rename = "blockType", default)]
+    block_type: String,
+    #[serde(default)]
+    value: String,
+    #[serde(default)]
+    speaker: Option<String>,
+}
+
+#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
+struct StoryScene {
+    id: String,
+    #[serde(default)]
+    mood: String,
+    #[serde(default)]
+    video: Option<String>,
+    #[serde(default)]
+    image: Option<String>,
+    #[serde(rename = "imageAlt", default)]
+    image_alt: Option<String>,
+    #[serde(default)]
+    blocks: Vec<StoryBlock>,
+}
+
+#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
+struct StoryChapter {
+    id: String,
+    #[serde(default)]
+    number: Option<String>,
+    title: String,
+    #[serde(default)]
+    status: String,
+    #[serde(default)]
+    teaser: Option<String>,
+    #[serde(default)]
+    scenes: Vec<StoryScene>,
+}
+
+#[derive(Debug, Deserialize, Serialize, juniper::GraphQLObject)]
+struct Story {
+    #[serde(default)]
+    email: String,
+    slug: String,
+    title: String,
+    #[serde(default)]
+    excerpt: String,
+    #[serde(default)]
+    status: String,
+    #[serde(rename = "sortOrder", default = "default_project_sort_order")]
+    sort_order: i32,
+    #[serde(default)]
+    chapters: Vec<StoryChapter>,
+}
+
 #[derive(Clone, Copy, Debug)]
 pub struct Query;
 
@@ -408,6 +463,57 @@ impl Query {
             }
             Err(err) => Err(FieldError::new(
                 "Failed to fetch blog post",
+                graphql_value!({ "details": err.to_string() }),
+            )),
+        }
+    }
+
+    async fn stories() -> Result<Vec<Story>, FieldError> {
+        match get_data_db(String::from("stories")).await {
+            Ok(values) => {
+                let mut stories: Vec<Story> = values
+                    .into_iter()
+                    .filter_map(|value| match value_to_type::<Story>(value.clone()) {
+                        Ok(story) => Some(story),
+                        Err(e) => {
+                            eprintln!("Failed to deserialize story: {:?}", e);
+                            eprintln!("Raw document structure: {:?}", value);
+                            None
+                        }
+                    })
+                    .collect();
+                stories.sort_by(|a, b| {
+                    a.sort_order
+                        .cmp(&b.sort_order)
+                        .then_with(|| a.title.cmp(&b.title))
+                });
+                Ok(stories)
+            }
+            Err(err) => Err(FieldError::new(
+                "Failed to fetch stories",
+                graphql_value!({ "details": err.to_string() }),
+            )),
+        }
+    }
+
+    async fn story(slug: String) -> Result<Option<Story>, FieldError> {
+        match get_data_db_by_slug(String::from("stories"), slug).await {
+            Ok(values) => {
+                let story: Option<Story> = values
+                    .into_iter()
+                    .next()
+                    .and_then(|value| match value_to_type::<Story>(value.clone()) {
+                        Ok(story) => Some(story),
+                        Err(e) => {
+                            eprintln!("Failed to deserialize story: {:?}", e);
+                            eprintln!("Raw document structure: {:?}", value);
+                            None
+                        }
+                    });
+                Ok(story)
+            }
+            Err(err) => Err(FieldError::new(
+                "Failed to fetch story",
                 graphql_value!({ "details": err.to_string() }),
             )),
         }

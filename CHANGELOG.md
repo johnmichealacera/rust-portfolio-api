@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0]
+
+### Added
+- Public `stories` / `story(slug)` GraphQL endpoints for narrative pages
+- Nested chapter, scene, and content-block types including `video`, `image`, and `imageAlt`
+- `seed_stories` binary to upsert story documents into MongoDB (`personal.stories`)
+
 ## [1.2.0] - 2024-01-XX
 
 ### Added

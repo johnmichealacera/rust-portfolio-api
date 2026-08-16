@@ -82,19 +82,35 @@ docker run -p 8000:8000 rust-portfolio-api
 
 ```bash
 query {
-  user {
-    name
-    email
-    socials {
-      platform
-      url
-    }
-    skills {
-      category
-      list
+  stories {
+    slug
+    title
+    excerpt
+    status
+    chapters {
+      id
+      number
+      title
+      scenes {
+        id
+        video
+        image
+        imageAlt
+        blocks {
+          blockType
+          value
+          speaker
+        }
+      }
     }
   }
 }
+```
+
+Seed public stories into MongoDB:
+
+```bash
+cargo run --bin seed_stories
 ```
 
 ## 📄 License
