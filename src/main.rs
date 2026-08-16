@@ -253,6 +253,8 @@ struct Story {
     status: String,
     #[serde(rename = "sortOrder", default = "default_project_sort_order")]
     sort_order: i32,
+    #[serde(rename = "publishedAt", default)]
+    published_at: Option<String>,
     #[serde(default)]
     chapters: Vec<StoryChapter>,
 }
