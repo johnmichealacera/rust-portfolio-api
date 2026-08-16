@@ -10,11 +10,12 @@
       "number": "I",
       "title": "The Father",
       "status": "published",
+      "teaser": null,
       "scenes": [
         {
           "id": "the-father-1",
           "mood": "quiet-house",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part1/the_father.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_father_vqnrbr.mp4",
           "image": null,
           "imageAlt": "A dim living room at night, toys scattered across the floor beside an open notebook.",
           "blocks": [
@@ -33,7 +34,7 @@
         {
           "id": "the-father-2",
           "mood": "quiet-house-dim",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part1/the_father_2.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_father_2_fie0dw.mp4",
           "image": null,
           "imageAlt": "The father sitting alone in near-darkness, lit only by a single lamp.",
           "blocks": [
@@ -52,7 +53,7 @@
         {
           "id": "the-father-3",
           "mood": "quiet-house-dim",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part1/the_father_3.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_father_3_yaadmv.mp4",
           "image": null,
           "imageAlt": "A close view of a sleeping child, seen from the doorway.",
           "blocks": [
@@ -75,11 +76,12 @@
       "number": "II",
       "title": "The World",
       "status": "published",
+      "teaser": null,
       "scenes": [
         {
           "id": "the-world-1",
           "mood": "night-walk",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part2/the_world_1.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_world_1_gfsegj.mp4",
           "image": null,
           "imageAlt": "A father walking alone through an empty, sleeping town at night.",
           "blocks": [
@@ -98,7 +100,7 @@
         {
           "id": "the-world-2",
           "mood": "night-walk",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part2/the_world_2.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_world_2_zcbhyg.mp4",
           "image": null,
           "imageAlt": "A street vendor preparing food at midnight beside a quiet, empty road.",
           "blocks": [
@@ -112,7 +114,7 @@
         {
           "id": "the-world-3",
           "mood": "night-walk",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part2/the_world_3.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_world_3_y4ujya.mp4",
           "image": null,
           "imageAlt": "A young couple arguing under a flickering streetlamp.",
           "blocks": [
@@ -126,7 +128,7 @@
         {
           "id": "the-world-4",
           "mood": "night-walk",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part2/the_world_4.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_world_4_tueic4.mp4",
           "image": null,
           "imageAlt": "A funeral procession passing beneath a glowing luxury billboard, a walled house behind it.",
           "blocks": [
@@ -145,7 +147,7 @@
         {
           "id": "the-world-5",
           "mood": "night-walk",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part2/the_world_5.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_world_5_frvuzd.mp4",
           "image": null,
           "imageAlt": "The father standing still at a crossroads, the empty town stretching in every direction.",
           "blocks": [
@@ -173,11 +175,12 @@
       "number": "III",
       "title": "The Question",
       "status": "published",
+      "teaser": null,
       "scenes": [
         {
           "id": "the-question-1",
           "mood": "hillside-sunrise",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part3/the_question_1.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_question_1_ilfuwi.mp4",
           "image": null,
           "imageAlt": "A lone figure on a hill overlooking a town, the first light of dawn on the horizon.",
           "blocks": [
@@ -196,7 +199,7 @@
         {
           "id": "the-question-2",
           "mood": "hillside-sunrise",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part3/the_question_2.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_question_2_c8svgg.mp4",
           "image": null,
           "imageAlt": "The same figure now simply sitting, watching the sunrise without moving.",
           "blocks": [
@@ -215,7 +218,7 @@
         {
           "id": "the-question-3",
           "mood": "hillside-sunrise",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part3/the_question_3.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_question_3_degzzg.mp4",
           "image": null,
           "imageAlt": "A small bird landing near the seated figure as the town below slowly wakes.",
           "blocks": [
@@ -234,7 +237,7 @@
         {
           "id": "the-question-4",
           "mood": "hillside-sunrise",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part3/the_question_4.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_question_4_mykqst.mp4",
           "image": null,
           "imageAlt": "A small boy crouched over something tiny on the ground, calling out to his father.",
           "blocks": [
@@ -253,7 +256,7 @@
         {
           "id": "the-question-5",
           "mood": "hillside-sunrise",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part3/the_question_5.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_question_5_u9ncnh.mp4",
           "image": null,
           "imageAlt": "The father, still seated on the hill, closing his eyes as the memory settles.",
           "blocks": [
@@ -276,11 +279,12 @@
       "number": "IV",
       "title": "The Realization",
       "status": "published",
+      "teaser": null,
       "scenes": [
         {
           "id": "the-realization-1",
           "mood": "hillside-sunrise-open",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part4/the_realization_1.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_realization_1_h5ga75.mp4",
           "image": null,
           "imageAlt": "Open sky above the hill, the light now brighter and less confined than before.",
           "blocks": [
@@ -299,7 +303,7 @@
         {
           "id": "the-realization-2",
           "mood": "hillside-sunrise-open",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part4/the_realization_2.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_realization_2_kjseou.mp4",
           "image": null,
           "imageAlt": "A faint, warm afterimage of the boy and the insect, overlaid on the open sky.",
           "blocks": [
@@ -318,7 +322,7 @@
         {
           "id": "the-realization-3",
           "mood": "hillside-sunrise-open",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part4/the_realization_3.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_realization_3_s1beka.mp4",
           "image": null,
           "imageAlt": "Wide, open dawn sky, nearly abstract, the town small in the distance below.",
           "blocks": [
@@ -342,7 +346,7 @@
         {
           "id": "the-realization-4",
           "mood": "hillside-sunrise-open",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part4/the_realization_4.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_realization_4_pijt0k.mp4",
           "image": null,
           "imageAlt": "The father standing now, fully lit by the risen sun.",
           "blocks": [
@@ -365,11 +369,12 @@
       "number": "V",
       "title": "The Father Returns",
       "status": "published",
+      "teaser": null,
       "scenes": [
         {
           "id": "the-father-returns-1",
           "mood": "return-home",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part5/the_father_returns_1.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_father_returns_1_ivxyzw.mp4",
           "image": null,
           "imageAlt": "The father walking back toward his house in the early morning light.",
           "blocks": [
@@ -388,7 +393,7 @@
         {
           "id": "the-father-returns-2",
           "mood": "return-home",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part5/the_father_returns_2.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_father_returns_2_url3wp.mp4",
           "image": null,
           "imageAlt": "The boy standing in the doorway, looking at his father with a suspicious frown.",
           "blocks": [
@@ -417,7 +422,7 @@
         {
           "id": "the-father-returns-3",
           "mood": "return-home",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part5/the_father_returns_3.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_father_returns_3_yfpjdp.mp4",
           "image": null,
           "imageAlt": "The father kneeling down to meet his son at eye level.",
           "blocks": [
@@ -436,7 +441,7 @@
         {
           "id": "the-father-returns-4",
           "mood": "return-home",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part5/the_father_returns_4.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_father_returns_4_rcnkej.mp4",
           "image": null,
           "imageAlt": "The boy tilting his head, confused, as his father laughs quietly.",
           "blocks": [
@@ -455,7 +460,7 @@
         {
           "id": "the-father-returns-5",
           "mood": "return-home",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part5/the_father_returns_5.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/the_father_returns_5_nuh2ix.mp4",
           "image": null,
           "imageAlt": "The boy pulling his father by the hand toward something small and unseen just out of frame.",
           "blocks": [
@@ -488,11 +493,12 @@
       "number": null,
       "title": "Final Scene",
       "status": "published",
+      "teaser": null,
       "scenes": [
         {
           "id": "final-scene-1",
           "mood": "quiet-horizon",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part6/final_scene_1.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/final_scene_1_hwcnae.mp4",
           "image": null,
           "imageAlt": "An old man and his grown son sitting together in quiet, facing a wide horizon.",
           "blocks": [
@@ -511,7 +517,7 @@
         {
           "id": "final-scene-2",
           "mood": "quiet-horizon",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part6/final_scene_2.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/final_scene_2_owet6m.mp4",
           "image": null,
           "imageAlt": "The grown son turning to ask his father a question, the horizon behind them.",
           "blocks": [
@@ -554,7 +560,7 @@
         {
           "id": "final-scene-4",
           "mood": "quiet-horizon",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part6/final_scene_4.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/final_scene_4_hvuoxb.mp4",
           "image": null,
           "imageAlt": "A quiet pause between father and son, neither speaking.",
           "blocks": [
@@ -578,7 +584,7 @@
         {
           "id": "final-scene-5",
           "mood": "quiet-horizon",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part6/final_scene_5.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/final_scene_5_yct4as.mp4",
           "image": null,
           "imageAlt": "The son taking his old father’s hand.",
           "blocks": [
@@ -597,7 +603,7 @@
         {
           "id": "final-scene-6",
           "mood": "quiet-horizon",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part6/final_scene_6.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/final_scene_6_gsh4pq.mp4",
           "image": null,
           "imageAlt": "The two of them, small against the wide, quiet horizon.",
           "blocks": [
@@ -626,7 +632,7 @@
         {
           "id": "final-scene-7",
           "mood": "quiet-house",
-          "video": "/stories/the-boy-who-was-born-into-a-broken-world/part6/final_scene_7.mp4",
+          "video": "https://res.cloudinary.com/dofpspduc/video/upload/f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24/v1786843265/final_scene_7.2_viocgb.mp4",
           "image": null,
           "imageAlt": "A tiny insect crossing the railing beside the old man and his son, echoing the story’s opening.",
           "blocks": [

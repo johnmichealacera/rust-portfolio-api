@@ -1,10 +1,9 @@
 //! Upserts public story documents into `personal.stories`.
 //! Run with: cargo run --bin seed_stories
 //!
-//! Video URLs live on each scene. Cloudinary delivery URLs should include
-//! the transform `f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24`
-//! between `/upload/` and the public id. Clips not yet on Cloudinary keep
-//! the local `/stories/...` path until you swap them in the JSON and re-run.
+//! Video URLs live on each scene as Cloudinary delivery URLs. Include the
+//! transform `f_mp4,vc_h264,q_auto:eco,w_960,c_limit,ac_none,fps_24` between
+//! `/upload/` and the public id. Do not point scenes at files in the Vue repo.
 use std::env;
 
 use dotenv::dotenv;
