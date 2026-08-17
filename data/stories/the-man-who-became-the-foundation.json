@@ -1,0 +1,1213 @@
+{
+  "slug": "the-man-who-became-the-foundation",
+  "title": "The Man Who Became the Foundation",
+  "excerpt": "A story about poverty, fatherhood, envy, ambition, and the burden of building a future from nothing.",
+  "status": "draft",
+  "sortOrder": 2,
+  "publishedAt": null,
+  "chapters": [
+    {
+      "id": "prologue",
+      "number": null,
+      "title": "The Fiesta",
+      "status": "published",
+      "teaser": null,
+      "scenes": [
+        {
+          "id": "prologue-1",
+          "mood": "fiesta-glow",
+          "video": null,
+          "image": null,
+          "imageAlt": "A town street at night lit with fiesta lights, music and movement everywhere.",
+          "blocks": [
+            { "blockType": "text", "value": "The town is celebrating.", "speaker": null },
+            { "blockType": "text", "value": "Music fills the streets. Children run between houses.", "speaker": null }
+          ]
+        },
+        {
+          "id": "prologue-2",
+          "mood": "fiesta-glow",
+          "video": null,
+          "image": null,
+          "imageAlt": "Tables overflowing with food, friends drinking and laughing together in the street.",
+          "blocks": [
+            { "blockType": "text", "value": "Someone is singing karaoke — laughing so loudly the whole street can hear.", "speaker": null },
+            { "blockType": "text", "value": "Tables overflow with food. Friends drink together. Couples sit beside each other.", "speaker": null },
+            { "blockType": "text", "value": "For one night, everyone seems to have forgotten their problems.", "speaker": null }
+          ]
+        },
+        {
+          "id": "prologue-3",
+          "mood": "lonely-window",
+          "video": null,
+          "image": null,
+          "imageAlt": "A man alone in a small dim room, staring at a laptop, the distant fiesta glow at the window's edge.",
+          "blocks": [
+            { "blockType": "text", "value": "But inside a small room... a man is staring at a laptop.", "speaker": null },
+            { "blockType": "text", "value": "The room is quiet. The screen illuminates his tired face.", "speaker": null }
+          ]
+        },
+        {
+          "id": "prologue-4",
+          "mood": "lonely-window",
+          "video": null,
+          "image": null,
+          "imageAlt": "Close on a laptop screen showing a terminal error, the man rubbing his tired eyes.",
+          "blocks": [
+            { "blockType": "text", "value": "A line of code. An error. A terminal. Another problem.", "speaker": null },
+            { "blockType": "text", "value": "He rubs his eyes.", "speaker": null }
+          ]
+        },
+        {
+          "id": "prologue-5",
+          "mood": "lonely-window",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man turning toward the window, watching the fiesta from a distance.",
+          "blocks": [
+            { "blockType": "dialogue", "value": "Come on! One more song!", "speaker": "A voice outside" },
+            { "blockType": "text", "value": "Everyone laughs.", "speaker": null },
+            { "blockType": "text", "value": "The man looks toward the window. He sees them.", "speaker": null }
+          ]
+        },
+        {
+          "id": "prologue-6",
+          "mood": "lonely-window",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man's tired face lit by the window light, caught between longing and exhaustion.",
+          "blocks": [
+            { "blockType": "text", "value": "And for a moment... he wishes he were there.", "speaker": null },
+            { "blockType": "text", "value": "Not because he hates them. Because he is tired.", "speaker": null },
+            { "blockType": "text", "value": "He wants to laugh. He wants to eat without calculating the cost. He wants to drink without thinking about tomorrow. He wants, just once, to feel that life isn't something he has to fight.", "speaker": null }
+          ]
+        },
+        {
+          "id": "prologue-7",
+          "mood": "lonely-window",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man closing his laptop in the dark, alone with the weight of the question.",
+          "blocks": [
+            { "blockType": "text", "value": "He looks back at his laptop. And a question enters his mind.", "speaker": null },
+            { "blockType": "dialogue", "value": "Will all of this sacrifice even be worth it?", "speaker": null },
+            { "blockType": "dialogue", "value": "What if I give everything I have... and still end up with less?", "speaker": null },
+            { "blockType": "text", "value": "He closes the laptop. For the first time that night... he lets himself feel the weight.", "speaker": null }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "before-the-mountain",
+      "number": "I",
+      "title": "Before the Mountain",
+      "status": "published",
+      "teaser": null,
+      "scenes": [
+        {
+          "id": "before-the-mountain-1",
+          "mood": "empty-wallet",
+          "video": null,
+          "image": null,
+          "imageAlt": "A young man sitting on the floor of a small house, a crying baby beside him.",
+          "blocks": [
+            { "blockType": "text", "value": "Years earlier.", "speaker": null },
+            { "blockType": "text", "value": "A young man sits on the floor of a small house. A baby is crying. His son.", "speaker": null }
+          ]
+        },
+        {
+          "id": "before-the-mountain-2",
+          "mood": "empty-wallet",
+          "video": null,
+          "image": null,
+          "imageAlt": "The young father checking an empty wallet twice, finding nothing.",
+          "blocks": [
+            { "blockType": "text", "value": "The father looks into his wallet. Nothing. He checks again. Still nothing.", "speaker": null }
+          ]
+        },
+        {
+          "id": "before-the-mountain-3",
+          "mood": "empty-wallet",
+          "video": null,
+          "image": null,
+          "imageAlt": "An empty milk bottle on a bare table, ordinary and out of reach.",
+          "blocks": [
+            { "blockType": "text", "value": "Milk. That's all the child needs. Something so ordinary. Something that should never have been difficult.", "speaker": null },
+            { "blockType": "text", "value": "But he cannot afford it.", "speaker": null }
+          ]
+        },
+        {
+          "id": "before-the-mountain-4",
+          "mood": "empty-wallet",
+          "video": null,
+          "image": null,
+          "imageAlt": "The father looking down at his crying infant son, helpless.",
+          "blocks": [
+            { "blockType": "text", "value": "He looks at his son. The child doesn't know about money. Doesn't know about shame. Doesn't know about poverty.", "speaker": null },
+            { "blockType": "text", "value": "He only knows that he is hungry.", "speaker": null }
+          ]
+        },
+        {
+          "id": "before-the-mountain-5",
+          "mood": "empty-wallet",
+          "video": null,
+          "image": null,
+          "imageAlt": "The father with his head lowered, surrounded by faint unseen voices of judgment.",
+          "blocks": [
+            { "blockType": "text", "value": "The father lowers his head. He hears the voices of other people.", "speaker": null },
+            { "blockType": "dialogue", "value": "You're a graduate.", "speaker": null },
+            { "blockType": "dialogue", "value": "But your sister is supporting your child?", "speaker": null },
+            { "blockType": "dialogue", "value": "Are you really ready to be a father?", "speaker": null }
+          ]
+        },
+        {
+          "id": "before-the-mountain-6",
+          "mood": "empty-wallet",
+          "video": null,
+          "image": null,
+          "imageAlt": "The young father doing whatever labor he can find, swallowing his pride.",
+          "blocks": [
+            { "blockType": "text", "value": "He pretends not to hear. But he hears everything.", "speaker": null },
+            { "blockType": "text", "value": "He helps with chores. He accepts whatever work he can. He swallows his pride.", "speaker": null },
+            { "blockType": "dialogue", "value": "Pride doesn't buy milk.", "speaker": null }
+          ]
+        },
+        {
+          "id": "before-the-mountain-7",
+          "mood": "empty-wallet",
+          "video": null,
+          "image": null,
+          "imageAlt": "The father sitting beside his sleeping infant son at night, making a silent promise.",
+          "blocks": [
+            { "blockType": "text", "value": "One night, while his child sleeps... he sits beside him. He looks at the tiny body. And makes a promise.", "speaker": null },
+            { "blockType": "dialogue", "value": "You won't have to live like this.", "speaker": null }
+          ]
+        },
+        {
+          "id": "before-the-mountain-8",
+          "mood": "empty-wallet",
+          "video": null,
+          "image": null,
+          "imageAlt": "The father's face, uncertain but resolved, in the dim room.",
+          "blocks": [
+            { "blockType": "text", "value": "He doesn't know how. He doesn't know when. He doesn't even know if he is capable of it.", "speaker": null },
+            { "blockType": "text", "value": "But he says it anyway.", "speaker": null }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-leap",
+      "number": "II",
+      "title": "The Leap",
+      "status": "published",
+      "teaser": null,
+      "scenes": [
+        {
+          "id": "the-leap-1",
+          "mood": "grind-lamp",
+          "video": null,
+          "image": null,
+          "imageAlt": "A young man walking away from an old job, a computer waiting at home.",
+          "blocks": [
+            { "blockType": "text", "value": "He leaves his job. He chooses programming.", "speaker": null },
+            { "blockType": "text", "value": "Everyone thinks he's taking a risk.", "speaker": null },
+            { "blockType": "text", "value": "They are right.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-leap-2",
+          "mood": "grind-lamp",
+          "video": null,
+          "image": null,
+          "imageAlt": "A bare desk with a single computer, nothing else — no safety net in sight.",
+          "blocks": [
+            { "blockType": "text", "value": "He has no safety net. No wealthy parents. No inheritance.", "speaker": null },
+            { "blockType": "text", "value": "No property waiting for him. No family business. No guaranteed future.", "speaker": null },
+            { "blockType": "text", "value": "Just a computer... and a dream.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-leap-3",
+          "mood": "grind-lamp",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man late at night, screen glow on his face, surrounded by open tutorials and notes.",
+          "blocks": [
+            { "blockType": "text", "value": "So he studies. Every day.", "speaker": null },
+            { "blockType": "text", "value": "He watches lessons. Reads documentation. Builds projects.", "speaker": null },
+            { "blockType": "text", "value": "Fails. Starts again.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-leap-4",
+          "mood": "grind-lamp",
+          "video": null,
+          "image": null,
+          "imageAlt": "A stack of unanswered job applications beside the glowing laptop.",
+          "blocks": [
+            { "blockType": "text", "value": "He applies for jobs.", "speaker": null },
+            { "blockType": "text", "value": "Rejected. Again. Rejected. Again.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-leap-5",
+          "mood": "grind-lamp",
+          "video": null,
+          "image": null,
+          "imageAlt": "A calendar with pages turning, seasons passing outside the same window.",
+          "blocks": [
+            { "blockType": "text", "value": "Months pass. Then years.", "speaker": null },
+            { "blockType": "text", "value": "The world doesn't care how badly he wants it.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-leap-6",
+          "mood": "grind-lamp",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man exhausted at his desk, a photo of his growing child nearby.",
+          "blocks": [
+            { "blockType": "text", "value": "The bills continue. His child continues growing. The fear remains.", "speaker": null },
+            { "blockType": "dialogue", "value": "Maybe I should give up.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-leap-7",
+          "mood": "grind-lamp",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man reopening his laptop, resolve returning to his face.",
+          "blocks": [
+            { "blockType": "text", "value": "Then he looks at his son. And remembers the milk.", "speaker": null },
+            { "blockType": "text", "value": "So he opens the laptop again.", "speaker": null }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-first-door",
+      "number": "III",
+      "title": "The First Door",
+      "status": "published",
+      "teaser": null,
+      "scenes": [
+        {
+          "id": "the-first-door-1",
+          "mood": "first-light",
+          "video": null,
+          "image": null,
+          "imageAlt": "An email notification glowing on a laptop screen in a dim room.",
+          "blocks": [
+            { "blockType": "text", "value": "One day... an email arrives.", "speaker": null },
+            { "blockType": "text", "value": "He opens it. He reads it. Then reads it again.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-first-door-2",
+          "mood": "first-light",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man staring at the screen, an acceptance letter reflected in his eyes.",
+          "blocks": [
+            { "blockType": "text", "value": "He has been accepted.", "speaker": null },
+            { "blockType": "text", "value": "A software developer. His first real job.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-first-door-3",
+          "mood": "first-light",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man's hands trembling as he covers his face, overwhelmed.",
+          "blocks": [
+            { "blockType": "text", "value": "He stares at the screen. Nothing happens for several seconds.", "speaker": null },
+            { "blockType": "text", "value": "Then his hands begin shaking. He covers his face. And cries.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-first-door-4",
+          "mood": "first-light",
+          "video": null,
+          "image": null,
+          "imageAlt": "Warm light breaking into the small room for the first time.",
+          "blocks": [
+            { "blockType": "text", "value": "Not because he has become successful.", "speaker": null },
+            { "blockType": "text", "value": "But because someone finally said:", "speaker": null },
+            { "blockType": "dialogue", "value": "Yes.", "speaker": null },
+            { "blockType": "text", "value": "After years of hearing:", "speaker": null },
+            { "blockType": "dialogue", "value": "No.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-first-door-5",
+          "mood": "first-light",
+          "video": null,
+          "image": null,
+          "imageAlt": "The father looking at his sleeping son, warm light across the room.",
+          "blocks": [
+            { "blockType": "text", "value": "That night, he looks at his sleeping son.", "speaker": null },
+            { "blockType": "dialogue", "value": "We made it.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-first-door-6",
+          "mood": "first-light",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man's quiet, unresolved expression beneath the warm light.",
+          "blocks": [
+            { "blockType": "text", "value": "But deep inside... he knows.", "speaker": null },
+            { "blockType": "text", "value": "They haven't.", "speaker": null },
+            { "blockType": "text", "value": "Not yet.", "speaker": null }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-mountain",
+      "number": "IV",
+      "title": "The Mountain",
+      "status": "published",
+      "teaser": null,
+      "scenes": [
+        {
+          "id": "the-mountain-1",
+          "mood": "climbing-mountain",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man working at a proper desk now, but still surrounded by bills and small chaos.",
+          "blocks": [
+            { "blockType": "text", "value": "The job changes his life.", "speaker": null },
+            { "blockType": "text", "value": "But it doesn't end the struggle.", "speaker": null },
+            { "blockType": "text", "value": "There are still bills. Children still get sick. Life still happens.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-mountain-2",
+          "mood": "climbing-mountain",
+          "video": null,
+          "image": null,
+          "imageAlt": "A sleepless night, the man awake while the household sleeps around him.",
+          "blocks": [
+            { "blockType": "text", "value": "There are sleepless nights. Arguments. Unexpected expenses. Responsibilities.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-mountain-3",
+          "mood": "climbing-mountain",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man visibly more capable now, but carrying more weight than before.",
+          "blocks": [
+            { "blockType": "text", "value": "He works. He learns. He improves. His salary grows.", "speaker": null },
+            { "blockType": "text", "value": "But so does his responsibility.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-mountain-4",
+          "mood": "climbing-mountain",
+          "video": null,
+          "image": null,
+          "imageAlt": "A silhouette climbing one ridge only to see another rise beyond it.",
+          "blocks": [
+            { "blockType": "text", "value": "Every time he reaches a hill... another mountain appears.", "speaker": null },
+            { "blockType": "dialogue", "value": "Just a little more.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-mountain-5",
+          "mood": "climbing-mountain",
+          "video": null,
+          "image": null,
+          "imageAlt": "The same silhouette, still climbing, the phrase repeating like a rhythm of footsteps.",
+          "blocks": [
+            { "blockType": "text", "value": "A little more savings. A little more experience. A little more income. A little more security.", "speaker": null },
+            { "blockType": "text", "value": "A little more. A little more. A little more.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-mountain-6",
+          "mood": "climbing-mountain",
+          "video": null,
+          "image": null,
+          "imageAlt": "Years compressed into a single image — the same man, older, children now taller beside him.",
+          "blocks": [
+            { "blockType": "text", "value": "Years pass. His children grow.", "speaker": null },
+            { "blockType": "text", "value": "And somewhere along the way... the young man realizes something.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-mountain-7",
+          "mood": "climbing-mountain",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man pausing on the climb, looking back at how far below the starting point still is.",
+          "blocks": [
+            { "blockType": "text", "value": "He is no longer climbing merely to escape poverty.", "speaker": null },
+            { "blockType": "text", "value": "He is climbing because he has discovered how far behind he started.", "speaker": null }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-inheritance",
+      "number": "V",
+      "title": "The Inheritance",
+      "status": "published",
+      "teaser": null,
+      "scenes": [
+        {
+          "id": "the-inheritance-1",
+          "mood": "quiet-inheritance",
+          "video": null,
+          "image": null,
+          "imageAlt": "A father standing over his sleeping children at night, thinking.",
+          "blocks": [
+            { "blockType": "text", "value": "One night, he looks at his children sleeping.", "speaker": null },
+            { "blockType": "text", "value": "He thinks about what he can leave them.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-inheritance-2",
+          "mood": "quiet-inheritance",
+          "video": null,
+          "image": null,
+          "imageAlt": "An empty table where an inheritance should be — nothing handed down, nothing waiting.",
+          "blocks": [
+            { "blockType": "text", "value": "No mansion. No family estate. No businesses handed down through generations.", "speaker": null },
+            { "blockType": "text", "value": "No land waiting for them. Nothing was prepared for him.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-inheritance-3",
+          "mood": "quiet-inheritance",
+          "video": null,
+          "image": null,
+          "imageAlt": "Close on the father's own hands, weathered but capable.",
+          "blocks": [
+            { "blockType": "text", "value": "And he realizes:", "speaker": null },
+            { "blockType": "dialogue", "value": "He has only himself.", "speaker": null },
+            { "blockType": "text", "value": "His hands. His mind. His ability to learn. His ability to work. His ability to endure. That's all.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-inheritance-4",
+          "mood": "quiet-inheritance",
+          "video": null,
+          "image": null,
+          "imageAlt": "The father looking at his children with quiet, tentative hope.",
+          "blocks": [
+            { "blockType": "text", "value": "He looks at his children. And thinks:", "speaker": null },
+            { "blockType": "dialogue", "value": "Maybe that's enough to begin.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-inheritance-5",
+          "mood": "quiet-inheritance",
+          "video": null,
+          "image": null,
+          "imageAlt": "A single small stone being laid, the first piece of something being built.",
+          "blocks": [
+            { "blockType": "text", "value": "He doesn't need to leave them a fortune.", "speaker": null },
+            { "blockType": "dialogue", "value": "He needs to leave them a foundation.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-inheritance-6",
+          "mood": "quiet-inheritance",
+          "video": null,
+          "image": null,
+          "imageAlt": "A modest, warmly lit home at night, small but steady.",
+          "blocks": [
+            { "blockType": "text", "value": "Something that wasn't given to him. A beginning.", "speaker": null },
+            { "blockType": "text", "value": "A little more security. A little more opportunity. A little more room to breathe.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-inheritance-7",
+          "mood": "quiet-inheritance",
+          "video": null,
+          "image": null,
+          "imageAlt": "The father tucking his children in, resolve settled quietly on his face.",
+          "blocks": [
+            { "blockType": "text", "value": "He doesn't need to make their lives perfect.", "speaker": null },
+            { "blockType": "text", "value": "He only wants them to begin farther ahead than he did.", "speaker": null }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-fiesta",
+      "number": "VI",
+      "title": "The Fiesta",
+      "status": "published",
+      "teaser": null,
+      "scenes": [
+        {
+          "id": "the-fiesta-1",
+          "mood": "fiesta-glow",
+          "video": null,
+          "image": null,
+          "imageAlt": "Present day: the same small room, the same distant fiesta glowing outside the window.",
+          "blocks": [
+            { "blockType": "text", "value": "Present day.", "speaker": null },
+            { "blockType": "text", "value": "The same man sits alone in his room.", "speaker": null },
+            { "blockType": "text", "value": "Outside: Music. Food. Drinking. Laughter. Life.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-fiesta-2",
+          "mood": "lonely-window",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man watching the celebration through the window, envy plain on his face.",
+          "blocks": [
+            { "blockType": "text", "value": "He watches through the window.", "speaker": null },
+            { "blockType": "text", "value": "And envy rises inside him. He doesn't pretend otherwise.", "speaker": null },
+            { "blockType": "dialogue", "value": "I want that.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-fiesta-3",
+          "mood": "lonely-window",
+          "video": null,
+          "image": null,
+          "imageAlt": "A wistful close-up of the man's face, lit by both the window and the screen.",
+          "blocks": [
+            { "blockType": "text", "value": "He wants the laughter. The freedom. The ease.", "speaker": null },
+            { "blockType": "text", "value": "The feeling that tomorrow doesn't depend entirely on what he accomplishes today.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-fiesta-4",
+          "mood": "lonely-window",
+          "video": null,
+          "image": null,
+          "imageAlt": "A distant figure outside laughing easily with friends, seen through the window.",
+          "blocks": [
+            { "blockType": "text", "value": "He looks at someone drinking with friends. And thinks:", "speaker": null },
+            { "blockType": "dialogue", "value": "Why does their life look so light?", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-fiesta-5",
+          "mood": "lonely-window",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man lowering his gaze, a flicker of shame crossing his face.",
+          "blocks": [
+            { "blockType": "text", "value": "Then he feels ashamed.", "speaker": null },
+            { "blockType": "text", "value": "He knows they aren't his enemies. They're just living.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-fiesta-6",
+          "mood": "lonely-window",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man turning back to his laptop, whispering to himself.",
+          "blocks": [
+            { "blockType": "text", "value": "He looks back at his laptop. And whispers:", "speaker": null },
+            { "blockType": "dialogue", "value": "I'm tired of watching everyone else live while I build.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-fiesta-7",
+          "mood": "lonely-window",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man pausing mid-thought, caught between resentment and duty.",
+          "blocks": [
+            { "blockType": "text", "value": "The thought hurts. Because he knows something else.", "speaker": null },
+            { "blockType": "dialogue", "value": "But if I stop building...", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-fiesta-8",
+          "mood": "lonely-window",
+          "video": null,
+          "image": null,
+          "imageAlt": "Faint overlapping memories flashing behind the man's eyes — the wallet, the milk, the shame.",
+          "blocks": [
+            { "blockType": "text", "value": "He remembers the empty wallet. The milk. The shame. The fear. His children's future.", "speaker": null },
+            { "blockType": "text", "value": "And he finishes the thought:", "speaker": null },
+            { "blockType": "dialogue", "value": "...who will build it?", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-fiesta-9",
+          "mood": "lonely-window",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man sitting in total silence, the fiesta glow now distant and small.",
+          "blocks": [
+            { "blockType": "text", "value": "Silence.", "speaker": null },
+            { "blockType": "text", "value": "There is nobody else.", "speaker": null }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-question",
+      "number": "VII",
+      "title": "The Question",
+      "status": "published",
+      "teaser": null,
+      "scenes": [
+        {
+          "id": "the-question-1",
+          "mood": "quiet-tree",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man walking away from the fiesta lights, the music growing fainter behind him.",
+          "blocks": [
+            { "blockType": "text", "value": "He walks outside. He leaves the celebration behind.", "speaker": null },
+            { "blockType": "text", "value": "He walks until the music becomes distant.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-question-2",
+          "mood": "quiet-tree",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man sitting alone beneath a tree in the quiet dark.",
+          "blocks": [
+            { "blockType": "text", "value": "Then he reaches a quiet place. He sits beneath a tree.", "speaker": null },
+            { "blockType": "text", "value": "And asks himself:", "speaker": null },
+            { "blockType": "dialogue", "value": "Why am I doing this?", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-question-3",
+          "mood": "quiet-tree",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man looking down at his hands, an unspoken answer forming.",
+          "blocks": [
+            { "blockType": "text", "value": "The answer is immediate. His children.", "speaker": null },
+            { "blockType": "text", "value": "But then comes another question:", "speaker": null },
+            { "blockType": "dialogue", "value": "Is that enough?", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-question-4",
+          "mood": "quiet-tree",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man sitting still for a long stretch of time, thinking deeply.",
+          "blocks": [
+            { "blockType": "text", "value": "He thinks. For a long time.", "speaker": null },
+            { "blockType": "text", "value": "And finally understands: he has been looking at sacrifice incorrectly.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-question-5",
+          "mood": "quiet-tree",
+          "video": null,
+          "image": null,
+          "imageAlt": "A quiet realization settling over the man's face beneath the tree.",
+          "blocks": [
+            { "blockType": "text", "value": "He thought sacrifice meant:", "speaker": null },
+            { "blockType": "dialogue", "value": "Giving up the present for the future.", "speaker": null },
+            { "blockType": "text", "value": "But perhaps his sacrifice means something else. It means:", "speaker": null },
+            { "blockType": "dialogue", "value": "Taking the burden now so that someone else doesn't have to carry all of it later.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-question-6",
+          "mood": "quiet-tree",
+          "video": null,
+          "image": null,
+          "imageAlt": "Faint memory imagery of the empty wallet and the crying child, softened by distance.",
+          "blocks": [
+            { "blockType": "text", "value": "He remembers the child who needed milk. He remembers being ashamed. He remembers having nothing.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-question-7",
+          "mood": "quiet-tree",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man's face, calm and resolved beneath the tree, understanding arriving quietly.",
+          "blocks": [
+            { "blockType": "text", "value": "And suddenly the reason becomes painfully simple:", "speaker": null },
+            { "blockType": "dialogue", "value": "I don't want my children to inherit my starting point.", "speaker": null }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-envy",
+      "number": "VIII",
+      "title": "The Envy",
+      "status": "published",
+      "teaser": null,
+      "scenes": [
+        {
+          "id": "the-envy-1",
+          "mood": "quiet-tree",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man looking back toward the distant fiesta lights from beneath the tree.",
+          "blocks": [
+            { "blockType": "text", "value": "He looks back toward the fiesta. The people are still laughing.", "speaker": null },
+            { "blockType": "text", "value": "He realizes something. He doesn't actually want their lives.", "speaker": null },
+            { "blockType": "text", "value": "He wants what their lives represent.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-envy-2",
+          "mood": "quiet-tree",
+          "video": null,
+          "image": null,
+          "imageAlt": "Three words hanging in the quiet night air, unspoken but clear.",
+          "blocks": [
+            { "blockType": "dialogue", "value": "Freedom.", "speaker": null },
+            { "blockType": "dialogue", "value": "Security.", "speaker": null },
+            { "blockType": "dialogue", "value": "Enough.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-envy-3",
+          "mood": "quiet-tree",
+          "video": null,
+          "image": null,
+          "imageAlt": "A faint vision of land, a home, a business — everything he wants to build.",
+          "blocks": [
+            { "blockType": "text", "value": "He wants to wake up without fear. He wants his children to have options.", "speaker": null },
+            { "blockType": "text", "value": "He wants to own something. Land. Savings. A home. A business. A future.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-envy-4",
+          "mood": "quiet-tree",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man's steady, clear-eyed expression beneath the tree.",
+          "blocks": [
+            { "blockType": "text", "value": "Not because money will make him worthy.", "speaker": null },
+            { "blockType": "text", "value": "But because he remembers what it feels like when there isn't enough.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-envy-5",
+          "mood": "quiet-tree",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man shaking his head slightly, refusing a comforting lie.",
+          "blocks": [
+            { "blockType": "text", "value": "And he refuses to romanticize poverty.", "speaker": null },
+            { "blockType": "text", "value": "He refuses to tell himself:", "speaker": null },
+            { "blockType": "dialogue", "value": "Suffering makes me stronger.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-envy-6",
+          "mood": "quiet-tree",
+          "video": null,
+          "image": null,
+          "imageAlt": "A firm, quiet rejection settling over the man's face.",
+          "blocks": [
+            { "blockType": "dialogue", "value": "No.", "speaker": null },
+            { "blockType": "text", "value": "Some suffering is simply suffering.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-envy-7",
+          "mood": "quiet-tree",
+          "video": null,
+          "image": null,
+          "imageAlt": "Echoes of the empty-wallet memory, framed now without any illusion of nobility.",
+          "blocks": [
+            { "blockType": "text", "value": "Being unable to buy milk isn't beautiful.", "speaker": null },
+            { "blockType": "text", "value": "Being dependent on others isn't noble.", "speaker": null },
+            { "blockType": "text", "value": "Watching your child need something you cannot provide isn't a lesson you should have to experience.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-envy-8",
+          "mood": "quiet-tree",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man's resolve hardening, refusing to settle into the dark.",
+          "blocks": [
+            { "blockType": "text", "value": "He doesn't want to become comfortable with that darkness.", "speaker": null },
+            { "blockType": "dialogue", "value": "He wants to escape it.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-envy-9",
+          "mood": "quiet-tree",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man's silhouette, steady and unmoving, accepting what the years ahead will cost.",
+          "blocks": [
+            { "blockType": "text", "value": "And if escape requires years of work...", "speaker": null },
+            { "blockType": "dialogue", "value": "Then years of work it will be.", "speaker": null }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-choice",
+      "number": "IX",
+      "title": "The Choice",
+      "status": "published",
+      "teaser": null,
+      "scenes": [
+        {
+          "id": "the-choice-1",
+          "mood": "quiet-tree-open",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man rising to his feet beneath the tree, the night opening up around him.",
+          "blocks": [
+            { "blockType": "text", "value": "The man stands.", "speaker": null },
+            { "blockType": "text", "value": "He doesn't feel enlightened. He isn't suddenly peaceful.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-choice-2",
+          "mood": "quiet-tree-open",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man standing steady, the same night, but something in his posture has shifted.",
+          "blocks": [
+            { "blockType": "text", "value": "The mountain is still there. His responsibilities are still there.", "speaker": null },
+            { "blockType": "text", "value": "His fear is still there. His envy is still there.", "speaker": null },
+            { "blockType": "text", "value": "But something has changed.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-choice-3",
+          "mood": "quiet-tree-open",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man looking up and outward, a new question replacing the old one.",
+          "blocks": [
+            { "blockType": "text", "value": "He no longer asks:", "speaker": null },
+            { "blockType": "dialogue", "value": "When will I finally be able to stop?", "speaker": null },
+            { "blockType": "text", "value": "Instead he asks:", "speaker": null },
+            { "blockType": "dialogue", "value": "What am I building?", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-choice-4",
+          "mood": "quiet-tree-open",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man's clear, unclouded expression, certainty replacing confusion.",
+          "blocks": [
+            { "blockType": "text", "value": "And the answer is clear.", "speaker": null },
+            { "blockType": "text", "value": "Not status. Not applause. Not a title. Not a perfect life.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-choice-5",
+          "mood": "quiet-tree-open",
+          "video": null,
+          "image": null,
+          "imageAlt": "A single word standing alone in the open night — foundation.",
+          "blocks": [
+            { "blockType": "dialogue", "value": "A foundation.", "speaker": null },
+            { "blockType": "text", "value": "For his children. For his family. For the man he wants to become.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-choice-6",
+          "mood": "quiet-tree-open",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man looking toward a wide, open horizon, uncertain but hopeful.",
+          "blocks": [
+            { "blockType": "text", "value": "Maybe someday he will have land. Maybe someday he will have enough savings.", "speaker": null },
+            { "blockType": "text", "value": "Maybe someday his children will inherit something. Maybe someday he will have enough freedom to choose how he spends his days.", "speaker": null },
+            { "blockType": "text", "value": "Maybe.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-choice-7",
+          "mood": "quiet-tree-open",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man walking back toward the road ahead, steady and resolved.",
+          "blocks": [
+            { "blockType": "text", "value": "But until then... he builds.", "speaker": null },
+            { "blockType": "text", "value": "Brick by brick. Skill by skill. Peso by peso. Year by year.", "speaker": null }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-difference",
+      "number": "X",
+      "title": "The Difference Between Him and the Man He Once Was",
+      "status": "published",
+      "teaser": null,
+      "scenes": [
+        {
+          "id": "the-difference-1",
+          "mood": "mirror-self",
+          "video": null,
+          "image": null,
+          "imageAlt": "A faint image of the younger man on the floor with the empty wallet, remembered rather than seen.",
+          "blocks": [
+            { "blockType": "text", "value": "He remembers the young man sitting on the floor with an empty wallet.", "speaker": null },
+            { "blockType": "text", "value": "That man was terrified. He thought he was a failure.", "speaker": null },
+            { "blockType": "text", "value": "He thought everyone was ahead. He thought his life was already ruined.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-difference-2",
+          "mood": "mirror-self",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man now, looking back at his younger self across the years.",
+          "blocks": [
+            { "blockType": "text", "value": "The man standing now looks back at him.", "speaker": null },
+            { "blockType": "dialogue", "value": "You weren't a failure.", "speaker": "The man" },
+            { "blockType": "dialogue", "value": "You were just starting from the bottom.", "speaker": "The man" }
+          ]
+        },
+        {
+          "id": "the-difference-3",
+          "mood": "mirror-self",
+          "video": null,
+          "image": null,
+          "imageAlt": "The two selves facing each other, one asking, the other answering.",
+          "blocks": [
+            { "blockType": "text", "value": "The young man looks at him.", "speaker": null },
+            { "blockType": "dialogue", "value": "Did we escape?", "speaker": "The young man" },
+            { "blockType": "text", "value": "The older man looks toward his children.", "speaker": null },
+            { "blockType": "dialogue", "value": "Not yet.", "speaker": "The man" }
+          ]
+        },
+        {
+          "id": "the-difference-4",
+          "mood": "mirror-self",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man looking at his own hands, once empty, now capable.",
+          "blocks": [
+            { "blockType": "dialogue", "value": "Then why are you smiling?", "speaker": "The young man" },
+            { "blockType": "text", "value": "The man looks at his hands. The same hands that once had nothing. Now they can build.", "speaker": null },
+            { "blockType": "dialogue", "value": "Because we're not where we started.", "speaker": "The man" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-foundation",
+      "number": "XI",
+      "title": "The Foundation",
+      "status": "published",
+      "teaser": null,
+      "scenes": [
+        {
+          "id": "the-foundation-1",
+          "mood": "quiet-inheritance",
+          "video": null,
+          "image": null,
+          "imageAlt": "Years passing quietly, the man still working, still learning, still building.",
+          "blocks": [
+            { "blockType": "text", "value": "Years pass.", "speaker": null },
+            { "blockType": "text", "value": "The father continues working. He continues learning. He continues building.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-foundation-2",
+          "mood": "quiet-inheritance",
+          "video": null,
+          "image": null,
+          "imageAlt": "A quiet, difficult moment among many, the man still occasionally glancing at others' easier lives.",
+          "blocks": [
+            { "blockType": "text", "value": "There are still difficult years. There are still setbacks.", "speaker": null },
+            { "blockType": "text", "value": "There are still moments when he looks at other people and envies their lives.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-foundation-3",
+          "mood": "quiet-inheritance",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man's calm, self-forgiving expression, no longer at war with himself.",
+          "blocks": [
+            { "blockType": "text", "value": "But he no longer hates himself for it.", "speaker": null },
+            { "blockType": "text", "value": "He understands.", "speaker": null },
+            { "blockType": "dialogue", "value": "Envy is sometimes simply grief for a life you wish you had been given.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-foundation-4",
+          "mood": "quiet-inheritance",
+          "video": null,
+          "image": null,
+          "imageAlt": "The man's hands at work again, slow and steady, building something of his own.",
+          "blocks": [
+            { "blockType": "text", "value": "And he wasn't given that life.", "speaker": null },
+            { "blockType": "text", "value": "So he builds another one.", "speaker": null },
+            { "blockType": "text", "value": "Slowly. Imperfectly. With his own hands.", "speaker": null }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-road",
+      "number": null,
+      "title": "The Road",
+      "status": "published",
+      "teaser": null,
+      "scenes": [
+        {
+          "id": "the-road-1",
+          "mood": "quiet-horizon",
+          "video": null,
+          "image": null,
+          "imageAlt": "An older father and his grown son standing together, overlooking a modest piece of land.",
+          "blocks": [
+            { "blockType": "text", "value": "The father is older. His son is now an adult.", "speaker": null },
+            { "blockType": "text", "value": "They stand somewhere overlooking a piece of land.", "speaker": null },
+            { "blockType": "text", "value": "It isn't enormous. It isn't impressive. But it belongs to the family.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-road-2",
+          "mood": "quiet-horizon",
+          "video": null,
+          "image": null,
+          "imageAlt": "The son looking around at the land, turning to his father.",
+          "blocks": [
+            { "blockType": "dialogue", "value": "Dad...", "speaker": "The son" },
+            { "blockType": "dialogue", "value": "Hm?", "speaker": "The father" },
+            { "blockType": "dialogue", "value": "Is this ours?", "speaker": "The son" },
+            { "blockType": "dialogue", "value": "Yes.", "speaker": "The father" }
+          ]
+        },
+        {
+          "id": "the-road-3",
+          "mood": "quiet-horizon",
+          "video": null,
+          "image": null,
+          "imageAlt": "The father looking at his own weathered hands, a small laugh escaping him.",
+          "blocks": [
+            { "blockType": "dialogue", "value": "You built all this?", "speaker": "The son" },
+            { "blockType": "dialogue", "value": "Not all of it.", "speaker": "The father" },
+            { "blockType": "text", "value": "He looks at his hands.", "speaker": null },
+            { "blockType": "dialogue", "value": "A lot of people helped me.", "speaker": "The father" },
+            { "blockType": "text", "value": "A pause.", "speaker": null },
+            { "blockType": "dialogue", "value": "But I started with almost nothing.", "speaker": "The father" }
+          ]
+        },
+        {
+          "id": "the-road-4",
+          "mood": "quiet-horizon",
+          "video": null,
+          "image": null,
+          "imageAlt": "The son growing quiet, a more serious question forming.",
+          "blocks": [
+            { "blockType": "text", "value": "His son becomes quiet. Then asks:", "speaker": null },
+            { "blockType": "dialogue", "value": "Were you ever afraid?", "speaker": "The son" },
+            { "blockType": "dialogue", "value": "Every day.", "speaker": "The father" },
+            { "blockType": "dialogue", "value": "Then why didn't you stop?", "speaker": "The son" }
+          ]
+        },
+        {
+          "id": "the-road-5",
+          "mood": "quiet-horizon",
+          "video": null,
+          "image": null,
+          "imageAlt": "The father looking toward the horizon, faint memories flickering behind his eyes.",
+          "blocks": [
+            { "blockType": "text", "value": "The father looks toward the horizon. For a moment, he sees himself years ago.", "speaker": null },
+            { "blockType": "text", "value": "The empty wallet. The crying baby. The shame. The rejection. The laptop. The fiesta. All of it.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-road-6",
+          "mood": "quiet-horizon",
+          "video": null,
+          "image": null,
+          "imageAlt": "The father turning to look at his son, the answer finally spoken.",
+          "blocks": [
+            { "blockType": "dialogue", "value": "Because I knew what was behind me.", "speaker": "The father" },
+            { "blockType": "text", "value": "He looks at his son.", "speaker": null },
+            { "blockType": "dialogue", "value": "And I knew what was ahead of you.", "speaker": "The father" },
+            { "blockType": "text", "value": "Silence.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-road-7",
+          "mood": "quiet-horizon",
+          "video": null,
+          "image": null,
+          "imageAlt": "The son looking from the land back to his father, asking the harder question.",
+          "blocks": [
+            { "blockType": "text", "value": "The son looks at the land. Then at his father.", "speaker": null },
+            { "blockType": "dialogue", "value": "Was it worth it?", "speaker": "The son" },
+            { "blockType": "text", "value": "The father doesn't answer immediately. He looks at the horizon.", "speaker": null },
+            { "blockType": "dialogue", "value": "Ask me when you have children of your own.", "speaker": "The father" },
+            { "blockType": "text", "value": "His son laughs. The father smiles.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-road-8",
+          "mood": "quiet-horizon",
+          "video": null,
+          "image": null,
+          "imageAlt": "The son looking toward the long road ahead, another mountain rising in the distance.",
+          "blocks": [
+            { "blockType": "dialogue", "value": "Are we there yet?", "speaker": "The son" },
+            { "blockType": "text", "value": "The father looks toward the road ahead. There is still another mountain. Still more work. Still more life.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-road-9",
+          "mood": "quiet-horizon",
+          "video": null,
+          "image": null,
+          "imageAlt": "The father taking his son's hand, both facing the road together.",
+          "blocks": [
+            { "blockType": "text", "value": "He takes his son's hand.", "speaker": null },
+            { "blockType": "dialogue", "value": "Not yet.", "speaker": "The father" },
+            { "blockType": "text", "value": "The son looks worried. The father smiles.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-road-10",
+          "mood": "quiet-horizon",
+          "video": null,
+          "image": null,
+          "imageAlt": "Father and son beginning to walk together down the long road.",
+          "blocks": [
+            { "blockType": "dialogue", "value": "But we're", "speaker": "The father" },
+            { "blockType": "text", "value": "They begin walking.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-road-11",
+          "mood": "quiet-horizon",
+          "video": null,
+          "image": null,
+          "imageAlt": "A wide, quiet shot of father and son walking down the road, the house and land behind them, another mountain ahead.",
+          "blocks": [
+            { "blockType": "text", "value": "No dialogue. Only the father and son walking down the road.", "speaker": null },
+            { "blockType": "text", "value": "Behind them: the house. The land. The life they built.", "speaker": null },
+            { "blockType": "text", "value": "Ahead: another mountain. The road continues.", "speaker": null }
+          ]
+        },
+        {
+          "id": "the-road-12",
+          "mood": "quiet-horizon",
+          "video": null,
+          "image": null,
+          "imageAlt": "The final, quiet frame of the road stretching onward beneath a wide sky.",
+          "blocks": [
+            { "blockType": "dialogue", "value": "I was never given a foundation.", "speaker": null },
+            { "blockType": "dialogue", "value": "So I became one.", "speaker": null }
+          ]
+        }
+      ]
+    }
+  ]
+}
