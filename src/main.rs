@@ -255,6 +255,10 @@ struct Story {
     sort_order: i32,
     #[serde(rename = "publishedAt", default)]
     published_at: Option<String>,
+    #[serde(rename = "aiGenerated", default)]
+    ai_generated: bool,
+    #[serde(rename = "audioUrl", default)]
+    audio_url: Option<String>,
     #[serde(default)]
     chapters: Vec<StoryChapter>,
 }

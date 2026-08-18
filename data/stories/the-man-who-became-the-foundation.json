@@ -5,6 +5,8 @@
   "status": "draft",
   "sortOrder": 2,
   "publishedAt": null,
+  "aiGenerated": true,
+  "audioUrl": null,
   "chapters": [
     {
       "id": "prologue",
